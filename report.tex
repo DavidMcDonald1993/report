@@ -1,0 +1,344 @@
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{verbatim}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\DeclareMathOperator*{\argmin}{argmin}
+
+\title{\Huge \textbf{Hierarchical Community Detection in Complex Networks using Growing Hierarchical Self Organising Map}}
+\author{David McDonald}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	content...
+\end{abstract}
+
+\chapter*{Acknowledgements}
+
+\tableofcontents
+
+\chapter{Introduction}
+
+introduce the problem of community detection here
+talk about how there is no firm definition etc.
+
+\chapter{Background \& Literature Review}
+This chapter aims to give the reader the relevant background information for this work. It will first introduce the problem of community detection and the highlight some of the important work that has already been done. The reader will then be introduced to a topology-preserving neural network, the self-organizing map, which will be used in this work for the purpose of detecting communities. 
+
+\section{Community Detection}
+This section aims to give the reader a brief oversight of the thoroughly researched field of community detection. Readers looking for an in depth surveys on the various approaches mentioned are pointed towards \cite{fortunato2016community,cai2016survey,zhang2016community,xie2013overlapping}.
+
+\subsection{Early Work \& Cut-Based Approaches}
+Most early work on community detection was concerned with `cutting' the graph into modules, in such a way that the number of edges cut was minimised. This, in theory, resulted in the best partition of the network \cite{kernighan1970efficient,fiduccia1982linear,ding2001min}. However, this often favoured cuts of small, peripheral subgraphs, so it was adapted into ratio cut \cite{wei1991ratio}, normalised cut \cite{shi2000normalized} and min-max cut \cite{ding2001min} that took the number of nodes in each resulting subgraph into account, and thus resulted in a partition that was more balanced.
+
+\begin{align*}
+    Rcut(A_1,...,A_k) = \sum_{i=1}^K \frac{cut(A_i),\bar{cut(A_i)}}{|A_i|}
+\end{align*}
+
+More recently, `conductance' has become a common term for defining a good cut. Conductance, defined as:
+\begin{align*}
+\phi(S) = \frac{c_s}{\min(Vol(S),Vol(V \setminus S)} 
+\end{align*}
+with
+\begin{align*}
+c_s = |\{(u,v) : u \in S, v \not\in S\}|
+\end{align*}
+is concerned with edges, rather than vertices, and has been used to detect communities in bipartite networks \cite{barber2007modularity} and combined with PageRank \cite{andersen2006local}. 
+
+Additional noteworthy early work includes the Metis algorithm \cite{karypis1998fast}, that finds the best split of a graph into two equal sized pieces, and the MQI algorithm \cite{gallo1989fast,lang2004flow}. The Markov Clustering algorithm proposed by Van Dongen in his PhD thesis \cite{van2001graph} simulates a diffusion process on a graph by repeatedly performing stages of expansion and inflation and only keeping the $k$ largest elements for efficiency. His algorithm has found use in Miru, a commercial 3D network visualisation software, to cluster very large graphs quickly.
+
+\subsection{Modularity-Based Approaches}
+The work by Girvan and Newman \cite{girvan2002community} in 2002 marked a significant advance in the fielf by providing the first quantitative measure of a community: modularity. The modularity of a partition of a network \cite{newman2004finding}, defined as 
+\begin{align} \label{modularity}
+    Q = \sum_{s=1}^m \bigg[ \frac{l_s}{L} - \bigg( \frac{d_s}{2L} \bigg)^2\bigg]
+\end{align}
+scores a partition by comparing the number of links inside a given module with the expected number that would be found in a random graph of the same size and degree sequence \cite{fortunato2007resolution}. Here, $m$ is the number of modules in the partition, $l_s$ is the number of links in module $s$, $L$ is the total number of links in the network and $d_s$ is the total degree of the nodes in $s$. The first term in eq. \ref{modularity} represents fraction of links inside $s$ and the second term represents the expected fraction of random links in the graphs to be in the module. Girvan and Newman propose a hierarchical divisive algorithm that removes edges based on their `betweenness' (the number of shortest paths from two nodes in the network that go through them) until the modularity quality function is maximised. 
+
+The work of Girvan and Newman has been greatly expanded upon in the following years. Radicchi used a similar divisive algorithm, but instead of edge betweenness, used an edge clustering co-efficient based on loops in the network. He also proffers the notion of `strong' and `weak' communities based on their internal and external degrees. Clauset \cite{clauset2004finding} sped up Newman's the agglomerate algorithm in \cite{newman2005power} to iteratively add links to a module based on their expected increase in modularity. A similar approach was performed by Guimera \cite{guimera2005functional} with simulated annealing. Blondel \cite{blondel2008fast} offers a multi-stage local optimisation of Girvan and Newman's algorithm that iteratively replaces communities with a single node. 
+
+Other work with modularity-based quality scores include the work of Rosvall \cite{rosvall2007information} that translates the problem of community detection into the problem of optimally compressing the information in a graph so that the most information can be uncovered when the compression is decoded. He used simulated annealing to minimise a function that represented both compression and data loss. While slow, this approach was also shown to work with dynamic processes in his later work \cite{rosvall2008maps}. Newman, himself, offered an alternative approach to his earlier modularity-maximisation algorithm. He used Bayesian inference to deduce the best model to fit the data represented in the graph structure. His algorithm was capable of finding the best group structure for any graph, no just a community structure, but required the number of groups to be know a-priori. Probability theory was also used by Yang in \cite{yang2013hierarchical} for the construction of his Probabilistically Mining Communities (PMC) algorithm. PMC offers a trade off between using a random walk as a heuristic to reduce the search space and optimising using a constrained quadratic optimisation function. Furthermore, `label propagation' methods proposed by Raghavan in \cite{raghavan2007near} have had success at detecting communities in real time \cite{leung2009towards}.
+
+Unfortunately, it has been shown that modularity-based approaches have limitations. In particular, Fortunato \cite{fortunato2007resolution} highlighted what he referred to as the `resolution limit'. He showed that modularity-based approaches can fail to identify communities that are smaller in size than a scale that depends on the size of the network, and this results in incorrect community division in the cases when even small communities must be considered. Hope is not lost, however, as the resolution limit can be overcome. Ronhovde \cite{ronhovde2010local} does not compare to a null model as in eq. \ref{modularity}, but instead penalise communities for missing edges. This provided excellent results even on very small communities compared to the size of the overall network. 
+
+
+\subsection{Spectral-Based Approaches}
+Spectral-based approaches, in particular spectral clustering, dates back to the work of Donath and Hoffman in 1973 \cite{donath1973lower}. However, it was popularised by the works of Shi and Malik \cite{shi2000normalized}, Meila and Shi \cite{meila2001random}, Ng et al. \cite{ng2002spectral}, and Ding \cite{ding2004tutorial}. Typically, they rely upon constructing `Laplacian' matrices from the raw graph data and eigen-decomposing them. Clustering the resulting matrix results in clusters of the original data points. This method has many advantages over other techinuiques and this has resulted in it becoming extremely popular in the machine learning community. According to \cite{von2007tutorial}, `these methods do not make assumptions about the form of the clusters' and are capable of correctly identifying typically challenging clusters, such as the famous two spirals example. For community detection, they have the additional benefit of efficiency, especially if the graph adjacency matrix is sparse. Additionally, they are able to detect which nodes form connected groups in the graph.   
+
+Spectral methods have been combined with traditional hierarchical modularity methods, as in \cite{donetti2004detecting}, where the graph was eigen-decomposed and projected into a $g$-dimensional subspace and then the resulting points were clustered to maximise modularity.
+%TODO more spectral 
+
+\subsection{Evolutionary Approaches}
+
+%TODO EAs
+
+Approaches using evolutionary algorithms typically encode the community structure of a graph using the locus based adjacency first proposed in \cite{park1998genetic} where the genotype consists of $N$ genes and $j$ appearing in gene position $i$ is interpreted as nodes $i$ and $j$ belonging to the same community. This representation was used to great effect as part of the MOCK algorithm \cite{handl2007evolutionary} which solved the community (or in this case, clustering) problem using a multi-objective optimisation algorithm that attempted to balance compactness and connection of the clusters, and used several novel genetic operators. Variation modifiers are used in \cite{pizzuti2008ga} to reduce the search pace by taking into account the correlations of the nodes.
+\subsection{Neural Network Approaches}
+
+%TODO the CNNs that shan sent me
+
+The deep learning community has began to explore the possibilities of using neural networks for clustering in the graph domain. Convolutional neural networks (CNNs), powerful machine learning tools that have proven very successful for challenging classification tasks have recented been generalised for to take a graph input \cite{defferrard2016convolutional}. CNNs have also been used for semi-supervised learning on graphs \cite{kipf2016semi}. Here, some nodes are labelled the labels of every other node are inferred by the model, which is capable of learning both the graph structure and node features.  
+
+\section{Overlapping and Hierarchical Community Detection}
+In many practical networks, partitioning a network into a cover does not accurately reflect the inherent community structure of the data. Sometimes, nodes can belong to more than one community -- sometimes communities overlap. The first algorithm to consider overlapping communities was CFinder in 2006 \cite{adamcsek2006cfinder}. Drawingf from the earlier work of Palla and the Clique Percolation Method (CPM) \cite{palla2005uncovering}, CFinder considered communities as the unions of k-cliques and so rolled k-cliques across the graph to detect communities. While computationally expensive, it was able to deal with overlapping cases, and opened the door for further study. Shen proposed EAGLE in 2009 \cite{shen2009detect} that used maximal cliques, an agglomerative hierarchical structure and a modified modularity quality function that detected complex overlapping community structures.
+
+The hierarchical nature of many modularity-based clustering method allows them to detect communities at different scales. Complex networks very often contain communities at different scales -- communities within communities -- and it is informative to investigate the communities identified at different levels of hierarchical algorithms to uncover these. The first algorithm to look for both overlapping and hierarchical communities was proposed by Lancincetti et al. \cite{lancichinetti2009detecting}, where they aim to locally optimise
+\begin{align*}
+f_G = \frac{k_{in}^G}{(k_{in}^G + k_{out}^G)^\alpha}
+\end{align*}
+where $k_{in}^G$, and $k_{out}^G$ are the total internal and external degree of the nodes going into community $G$, and $\alpha$ controls the size of communities. 
+
+Potts methods have also shown good tolerance towards communities that overlap. Both \cite{reichardt2006statistical} and \cite{ronhovde2009multiresolution} look for the ground state of spin and interpret the spin configuration that minimises energy of spin glass as the underlying community structure of the state. Due to user-controlled resolution parameters, they are able to identify overlapping and hierarchical communities.
+
+Other work includes multi-scale quality functions that can uncover hierarchical communities and produce several different partitions of a graph, the post-processing of clusters found by hierarchical methods (encoded in a dendogram) \cite{pons2011post}, and Bayesian non-negative matrix factorisation  that performs `soft-partitioning' and assigns node participation scores to modules \cite{psorakis2011overlapping}.
+
+\section{Self-Organising Maps}
+This section aims to introduce the reader to the Self-Organising Map, the particular machine learning tool that will be adapted for multi-scale community detection later in this work.
+
+\subsection{Introduction}
+Also known as the Kohonen Map after its creator Teuvo Kohonen, the Self-Organising Map (or SOM) is a topology-preserving neural network that performs unsupervised learning of a input space to a low-dimensional descete map \cite{kohonen1982self,kohonen1990self,kohonen1995learning}. Unlike other neural networks, SOM uses competitive learning - determining the `winning' neuron by some distance function -- called Learning Vector Quantization (LVQ). Then weights of all neurons are adjusted proportional to their distance to the winning neuron. This results in a map where the topology of the input space is preserved.
+
+
+\subsection{SOM for Clustering}
+SOM for classification has been throughly researched \cite{kiang2001extending} thanks to Learning Vector Quantization (LVQ), an extension to SOM that divides the input space into `Voronoi Regions' based on Euclidean distance to the weight vector of each neuron, proposed by Kohonen humself \cite{kohonen1995learning}. SOM has had successes with medical diagnosis \cite{vercauteren1990classification}, image and character recognition \cite{sabourin1993modeling,delbimbo1993three}, and speech recognition \cite{leinonen1993self}. Clustering with SOM, however, remains relatively under researched. Fritzke \cite{fritzke1994growing} offers both an unsupervised and supervised SOM algorithm for clustering. Additionally, his algorithm automatically finds the best network structure and size using controlled map growth and neuron removal. Both \cite{kiang2001extending} and \cite{vesanto2000clustering} cluster the output of SOM using k-means and this outperforms the clustering of k-means and hierarchical clustering alone.
+
+\subsection{SOM with Graph Input}
+Very little research has been undertaken for using SOM for community detection in graphs. Yamakawa et al. \cite{yamakawa2006self} implemented a SOM variation that could take a graph as an input. They constrain the weights of the neurons in the network to only point to edges on the graph. They represent weights as
+\begin{align*}
+w = (n_i, n_j, \beta)
+\end{align*}
+where $n_i$ is a node on the graph, $n_j$ is a neighbour of $n_i$, and $\beta\in[0,1]$ presents how far along the edge connecting $n_i$ and $n_j$ the weight vector is pointing. The SOM algorithm remains largely the same, with shortest path on the graph being used as the distance function.
+
+\chapter{Method}
+This chapter aims to give the reader an overview of the community detection algorithm presented in this work.
+
+\begin{figure}
+\centering
+\includegraphics[height=\textheight]{overall_algorithm.png}
+\caption{An overview of the algorithm}
+\label{overview_diagram}
+\end{figure}
+
+%\section{Spectral Decomposition}
+%Suppose a graph $\textbf{G}$ containing $n$ nodes. Let $\textbf{A}$ be its adjacency matrix, $\textbf{I}_n$ the $n\times n$ identity matrix and $D$ the diagonal matrix where the element at $\textbf{D}_{ii}$ is the degree of node $i$. Then the Normalised Laplacian Matrix, $\textbf{L}$, given by
+%\begin{align*}
+%\textbf{L} = \textbf{I}_n - \textbf{D}^{-\frac{1}{2}} \textbf{A} \textbf{D}^{-\frac{1}{2}} 
+%\end{align*}
+%can be factorised into
+%\begin{align*}
+%\textbf{L} = \textbf{U} \Lambda \textbf{U}^{-1}
+%\end{align*}
+%using an eigen-decomposition of $\textbf{L}$. Here, $\Lambda$ is a diagonal matrix containing all the eigenvalues of L, and $\textbf{U}$ is the $n\times n$ matrix where the $j$th column is the eigenvector associated with the $j$th eigenvalue. 
+%
+%One can determine how many connected components are within G by first sorting the eigenvalues into ascending order and counting the number of zeros. To determine the corresponding membership of each node to a connected component then one must look for the non-zero entries in the associated eigenvector $u_i$ of the $i$th zero eigenvalue. The following property holds: $u_i^j > 0 \iff $ the $j$th node of $\textbf{G}$ belongs to the $i$th connected component of $\textbf{G}$. In this way, any given graph $\textbf{G}$ can be broken into its $n$ connected components $\textbf{G}_1, ..., \textbf{G}_n$.
+
+\section{MDS projection}
+Suppose a connected graph $\textbf{G}$.The first step of the algorithm is to project $\textbf{G}$ into the Euclidean space. For this, we use Multi-Dimensitonal Scaling (MDS). MDS takes as input a matrix of distances or dissimilarities and attempts to find an embedding of each point such that the relative distances are preserved. An initial guess for a good metric to use here was the shortest path length for each node to each other node in the graph. This distance is finite for all pairs of nodes since $\textbf{G}$ is connected. Alternative metrics could have been experimented with, such as Diffusion State Distance (DSD) \cite{cao2013going} (a metric shown to be more suitable for protein-protein interaction (PPI) networks with few nodes of very high degree), and that is a potential future direction of this work.
+
+After obtaining a dissimilarity matrix $\textbf{D}$, a kernel matrix $\textbf{K}$ can be computed using double centring as follows:
+\begin{align*}
+\textbf{K} = -\frac{1}{2} \textbf{C}_n \textbf{D} \textbf{C}_n
+\end{align*} 
+where $C_n$ is the centring matrix, given by
+\begin{align*}
+\textbf{C}_n = \textbf{I}_n - \frac{1}{n} \textbf{1} \textbf{1}^T
+\end{align*}
+$\textbf{K}$ is eigen-decomposed and factored into
+\begin{align*}
+\textbf{K} = \textbf{U} \Lambda \textbf{U}^{-1}
+\end{align*}
+Since Euclidean spaces have the property that
+\begin{align*}
+\textbf{K} = \textbf{X} \textbf{X}^T
+\end{align*}
+then we have that the embedding matrix $\textbf{X}$ is given by
+\begin{align*}
+\textbf{X} = \textbf{U} \Lambda^{\frac{1}{2}}
+\end{align*}
+
+MDS is used as a form of dimensionality reduction. A pre-determined dimension $k$ (usually 2 or 3 for data visualisation) is given to the algorithm and only the $k$ eigenvectors and eigenvalues are used to compute $\textbf{X}$ that minimise strain, given by
+\begin{align*}
+strain_{\textbf{D}} (x_1, x_2, ..., x_n) = \Bigg ( \frac{\Sigma_{i,j}(k_{i,j} - \langle x_i,x_j \rangle)^2}{\Sigma_{i,j}k^2_{i,j}} \Bigg ) ^ {\frac{1}{2}} 
+\end{align*}
+
+In order to prevent the need to specify $k$ a-priori, this algorithm determined $k$ dynamically by ordering the eigenvalues into descending order and calculating their sum. $k$ was initialised to $k=n$ and then the sum of the first $k$ eigenvalues was computed and then divided by the sum of all the eigenvalues. If this was greater than 0.95, then $k$ was decreased by 1 and this process was repeated. In other words, we are looking for the largest $k$ such that
+\begin{align*}
+\frac{\Sigma_{i=1}^k \lambda_i}{\Sigma_{j=1}^n \lambda_j} \geq 0.95
+\end{align*}
+holds. This ensures that 95\% of variation is preserved, no matter how many nodes in $\textbf{G}$ there are. Then the $k$ largest eigenvalues and their associated eigenvectors are used to compute $\textbf{X}$, giving an $n\times k$ matrix where the $i$th row gives the co-ordinates of node $i$ in $k$-dimensional space.
+
+\section{GHSOM}
+Embedding the $n$ nodes into $k$ dimensional space translates the problem of finding communities to identifying clusters. This is because the distance (by whatever metric used) between two nodes within the same community should be smaller than two nodes belonging to two different communities. Therefore, all of the nodes within a community should be embedded closely together and so identifying clusters in $\mathbb{R}^k$ is the same as identifying communities in $\textbf{G}$.
+
+The Growing Hierarchical Self Organising Map (GHSOM) algorithm is used to identify clusters in this work. GHSOM has a number of advantages over other clustering algorithms. Firstly, the number of clusters does not need to be known a-priori, and also GHSOM is capable of detecting the hierarchical structure of clusters (ie. clusters within clusters). GHSOM also inherits the primary advantage of the standard SOM algorithm in that the topology of the input space is preserved in the output map. This means neighbouring features of the input space will appear together in the output map. This makes GHSOM an excellent choice for a general tool for detecting communities in biological networks that so commonly feature a hierarchical structure. The topology preservation property will show the overall position of the communities within the network as a whole. 
+
+
+\subsection{Hyper-Parameters}
+Two hyper-parameters must be given to GHSOM before it begins. The first is $\epsilon_{sg}$ and this determines the size of the maps that will be created, and the second, $\epsilon_{en}$, determines the granularity of the maps. Both of these will be discussed more later. Additionally, GHSOM uses a measure of error, that its creators have called Mean Quantisation Error (or MQE). Let the MQE of a single unit $i$ be denoted $\textbf{mqe}_i$ and the MQE of an entire network $m$ be denoted $\textbf{MQE}_m$.
+
+\subsection{Initial Step}
+GHSOM begins with layer 0 consisting of a single node. This node is given a weight $\textbf{w}$ that points to the centre of all the datapoints. The MQE of this node is computed as 
+\begin{align*}
+\textbf{mqe}_0 = \frac{1}{n} \sum_{i=1}^n ||\textbf{w} - \textbf{x}_i||
+\end{align*} 
+
+\subsection{Training the First Layer}
+GHSOM then begins training the first layer of the network. The first layer is initialised to just one neuron. The weights of these two neurons are initially set to be random vectors in $\mathbb{R}^k$. The network is then trained as in the standard SOM algorithm.
+
+The network is then trained for $\lambda=1000$ epochs. One training epoch consists of presenting each training pattern (the embedded points of $\textbf{G}$) to the network. For each pattern $\textbf{x}$, the `winning' neuron $i^*$ is determined as
+\begin{align*}
+i^* = \argmin_i  ||\textbf{x} - \textbf{w}_i||
+\end{align*}
+
+The weights of every neuron in the network are then adjusted to move a little closer to $\textbf{x}$, based on how close to $i^*$ they are in the network.
+\begin{align*}
+\textbf{w}_i(t+1) = \textbf{w}_i(t) + \eta(t) h(i, i^*, \sigma(t)) (\textbf{v} - \textbf{w}_i)
+\end{align*}
+
+The weights are also adjusted proportionally to the learning rate $\eta(t)$, which is typically a small number of the order $1e-3$, and the so-called neighbourhood function $h(i, i^*, \sigma(t))$, given by
+\begin{align*}
+h(i, i^*, \sigma(t)) = \exp\Bigg(-\frac{||\textbf{r}_i-\textbf{r}_{i^*}||^2}{2\sigma(t)^2}\Bigg)
+\end{align*}
+where $\textbf{r}_i$ is the position of neuron $i$ in the network. The neighbourhood function maintains the topological ordering of the map, as neurons closer to the winning neuron in the map move towards $\textbf{x}$ more.
+
+Both $\eta(t)$ and $\sigma(t)$ can vary with time and typically decrease as the number of training epochs increases. This allows the movements of the weights to gradually decrease and become fine-tuned.
+
+At the end of each training epoch, the order of the training patterns is shuffled. The neighbourhood width $\sigma(t)$ is also dropped in the following manner
+\begin{align*}
+\sigma(t) = \sigma_0 \exp \Bigg(-\frac{2 \sigma_0 t}{\lambda}\Bigg)
+\end{align*}
+
+\subsection{Growing the Map}
+After $\lambda=1000$ training epochs have passed, every node in $\textbf{G}$ is assigned to the neuron whose weight vector is closest and the $\textbf{mqe}_i$ for each neuron is calculated as well as the overall $\textbf{MQE}_1$ of the network. If 
+\begin{align*}
+\textbf{MQE}_1 \geq \epsilon_{sg} \textbf{mqe}_0
+\end{align*}
+then the network is expanded, by inserting a single neuron.
+
+Network expansion largely follows the example proposed by Bernd Fritzke \cite{fritzke1994growing} and aims to preserve a simplicial structure within the network whenever a new neuron is added. Firstly, one must identify the `error unit' $e$ -- the neuron with the greatest error in the network. Then retrieve the list of all of the neighbours of $e$.
+
+\subsubsection{Single Neuron in Network}
+In the case that $e$ has no neighbours (the network consists of one neuron) then a new neuron is added to he network with a random weight vector and connected to the $e$. 
+
+\subsubsection{Two Neurons in Network}
+In the case of one neighbour, the weight vector of the new neuron is given the mean of the weight vectors of the the existing two neurons in the network and then connected to both neurons. 
+
+\subsubsection{Greater than Two Neurons}
+In the case of two or greater neighbours, the `furthest neighbour', $n_1$, of $e$ is identified. This is the neighbour whose weight vector points furthest away from the weight vector of $e$ in the input space. The furthest neighbour is then determined from the list of mutual neighbours of $n_1$ and $e$, called $n_2$. Next, the connection between $n_1$ and $n_2$ is broken and a new neuron is inserted with a weight vector equal to the mean of the weight vectors of $e$, $n_1$, and $n_2$. Finally, the new neuron is connected to every neuron that is connected to both $n_1$ and $n_2$ (including $e$).
+
+\subsection{Termination of Network Growth}
+The network is again trained for $\lambda=1000$ epochs and $\textbf{MQE}_1$ is calculated. If
+\begin{align*}
+\textbf{MQE}_1 < \epsilon_{sg} \textbf{mqe}_0
+\end{align*}
+then expansion terminates, else another neuron is inserted and the process repeats.
+
+\subsection{Adding a New Layer to the Network}
+After growth for this layer has terminated the GHSOM determines whether or not to build another layer of the network by expanding specific neurons in this layer. This is determined by the choice of $\epsilon_{en}$. GHSOM scans across all the neurons $i$ in the network and checks if
+\begin{align*}
+\textbf{mqe}_i \geq \epsilon_{en} \textbf{mqe}_0
+\end{align*}
+
+If a neuron $i^*$ is located with this property then a new network is build (again starting from one neuron). This time, only the subset of nodes in $\textbf{G}$ that were assigned to $i^*$ are passed to the new network.
+
+\subsection{Termination}
+GHSOM continues to train and expand until 
+\begin{align*}
+\textbf{MQE}_m < \epsilon_{sg} \textbf{mqe}_0
+\end{align*}
+for all networks $m$ and
+\begin{align*}
+\textbf{mqe}_i < \epsilon_{en} \textbf{mqe}_0
+\end{align*}
+for all neurons $i$. 
+
+\begin{figure}
+\centering
+\includegraphics[height=\textheight]{ghsom_diagram.png}
+\caption{An overview of the GHSOM algorithm}
+\label{ghsom_diagram}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[scale=0.7]{training.png}
+		\caption{The procedure for training the map.}
+		\label{train_map}
+	\end{subfigure}%
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[scale=0.7]{grow_map.png}
+		\caption{The procedure for growing the map.}
+		\label{grow_map}
+	\end{subfigure}
+	\caption{Procedures for training and expanding.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[height=\textheight]{expand.png}
+\caption{The procedure for expanding the map.}
+\label{expand_map}
+\end{figure}
+
+\chapter{Results}
+This chapter will evaluate the performance of GHSOM for hierarchical community detection against some of the other leading algorithms in the literature.
+\section{Bayesian Optimisation}
+The choice of $\epsilon_{sg}$ affects the detail of the resulting maps in GHSOM and the choice of $\epsilon_{en}$ affects the depth of the resulting hierarchy. Optimal values for these proved to be very problem-dependant. As a result, a Bayesian Optimisation approach was used to optimise these along with the training parameters of SOM (the learning rate $\eta$, the starting neighbourhood width $\sigma_0$, and the bounds for the initialisation of weights $w$).
+
+The Bayesian Optimisation software Spearmint was used for this. Written in Python 2.7 by Jasper Snoek et al. and based on the work from the following publications: \cite{snoek2012practical,swersky2013multi,snoek2013bayesian,snoek2014input,gelbart2014bayesian}, Spearmint automatically runs experiments and adjusts a number of parameters to minimise an objective in as few runs as possible.
+
+\subsection{Objective Function}
+Spearmint was used to minimise 
+\begin{align*}
+f(X, Y) = 1 - \text{NMI}(X, Y) 
+\end{align*}
+with NMI$(X,Y)$ as the Normalised Mutual Information score between the predicted set of class labels $X$ and the actual set of class labels $Y$, defined as
+\begin{align*}
+\text{NMI}(X : Y) &= \frac{H(X)+H(Y)-H(X,Y)}{(H(X)+H(Y))/2} \\
+&= \frac{1}{\sqrt{H(X) H(Y)} }\sum_{i=1}^R \sum_{j=1}^C P(i,j) \log \frac{P(i,j)}{P(i)P'(j)}
+\end{align*}
+where $R$ and $C$ are the number of clusters in $X$ and $Y$ respectively, and $P(i)$ is the probability of a random sample occurring in cluster $X_i$ and $P'(j)$ is the probability of a random sample occurring in cluster $Y_j$. $H(X)$ is the entropy of random variable $X$, given by 
+\begin{align*}
+H(X) = -\sum_{i=1}^n P(x_i) \log P(x_i)
+\end{align*}
+NMI gives a score between 0 (indicating no mutual information) and 1 (indicating perfect mutual information). In other words, the greater the NMI score, the more nodes are assigned to the correct community. Therefore, we aim to minimise $f$.
+\section{Real-World Benchmarks}
+
+\subsection{Zachary's Karate Club}
+\cite{zachary1977information}
+\subsection{American College Football}
+\cite{girvan2002community}
+\subsection{Polbooks}
+\subsection{Dolphins}
+\cite{lusseau2003emergent,lusseau2003bottlenose}
+\subsection{Comparisons with other algorithms}
+
+TABLE OF RESULTS HERE
+
+\section{Synthetic Hierarchical Graphs}
+generated with the software given by Lancichinetti and Fortunato binary: \cite{lancichinetti2009community}
+hierarchical: \cite{lancichinetti2009detecting}
+\chapter{Implementation Details}
+To be omitted from paper
+\section{Network Representation}
+The representation of a network in this work was different to that of GHSOM's creators. Networks are represented as NetworkX graph objects, with neurons represented as nodes on the graph. The distance $(||\textbf{r}_i-\textbf{r}_{i^*}||)$ between neuron $i$ and neuron $j$  is defined as the length of the shortest path between the nodes on the graph. The nodes in the graph contain attributes that hold its weight vector and the list of nodes in $\textbf{G}$ assigned to this neuron's cluster. This representation was selected to allow for the expansion of the network to happen one neuron at a time, rather than inserting an entire row or column of neurons at once. The rational here was that by slowly expanding the network one neuron at a time, the resulting map would more accurately reflect the number of communities in the data. In contrast with expanding the network by adding an entire row or column at once and potentially over estimating that number. 
+
+\chapter{Discussion}
+
+\section{Conclusions}
+
+\section{Future Directions}
+
+\bibliography{references}
+\bibliographystyle{unsrt}
+
+\end{document}

@@ -1,0 +1,239 @@
+\documentclass[•]{article}
+
+\usepackage{amsmath}
+\begin{document}
+
+\section{Cut}
+
+%minimising the number of edges cut \cite{kernighan1970efficient,fiduccia1982linear,ding2001min}
+%
+%this only cut small subgraphs, so ration cut \cite{wei1991ratio}, normalised cut \cite{shi2000normalized} and min-max cut \cite{ding2001min}
+%
+%
+%Metis \cite{karypis1998fast} - MQI \cite{gallo1989fast,lang2004flow} algorithm 
+%metis - splits graph into two equal sized pieces 
+%MQI - low
+%
+%
+%\cite{van2001graph}
+%markov clustering algorithm (MCL)
+%two phases to simulate diffusion process on graph - expansion/inflation
+%only k largest elements are kept at each phase for efficiency
+
+\section{modularity}
+
+%\cite{girvan2002community}
+%seminal
+%hierarchical divisive algorithm
+%removed edges based on their betweeness until modularity quality function is maximised
+%
+%\begin{align*}
+%Q - \sum_{i=1}^k (e_{ii} - a_i^2)
+%\end{align*}
+%where $e_i$ is the probability that edge $i$ is in module $i$ and $a_i$ is the probability that a random edge would be in module $i$
+
+%\cite{clauset2004finding}
+%sped up \cite{newman2005power}
+%links are iteratively added to produce the largest increase in modularity
+%
+%\cite{guimera2005functional}
+%same as above but with simulated annealing
+
+%\cite{blondel2008fast}
+%multistage algorithm
+%local optimisation of GN modularity on neighbourhood of each node
+%communities are replaced by a single node
+%repeat until modularity stops increasing
+
+%\cite{radicchi2004defining}
+%dividing hierarchical like GN
+%does not use edge betweenness - uses edge clustering co-efficient based on loops and stops based on quality of communities not modularity
+%strong community - internal < external degree
+%week community - total internal < total external degree
+
+
+
+
+%\cite{rosvall2007information}
+%translates the problem of clustering to the problem of optimally compressing the information on the graph so that the most information is uncovered when the compression is decoded
+%uses SA to minimise a function that represents compression and data loss
+%slow
+%
+%\cite{rosvall2008maps}
+%same principle as above but with a dynamic process
+%used SA to optimise a compression based on minimum length of a random walk
+
+
+
+%\cite{newman2007mixture}
+%uses bayesian inference to deduce best model to fit data represented by graph structure
+%advantage: can find best group structure (not necessarily communities)
+%disadvantage: k must be known a-priori
+
+%\cite{fortunato2007resolution}
+%modularity optimisation can lead to incorrect community divisions due to a `resolution limit' (fails to identify modules smaller than a scale that depends on the size of the network)
+
+
+%\cite{ronhovde2010local}
+%overcomes the resolution limit of modularity optimisation by not comparing to a null model but instead penalising communities for missing edges 
+
+
+
+%
+%
+%\cite{yang2013hierarchical}
+%proposes Probabalistically Mining Communities (PMC)
+%two phases - 
+%heuristic - random walk to reduce search space for communities
+%optimisation - constrained quadratic objective function
+%integrates advantages of both and offers a trade-off between effectiveness and efficiency
+
+%\cite{leskovec2010empirical}
+%conductance:
+%\begin{align*}
+%\phi(S) = \frac{c_s}{\min(Vol(S),Vol(V \setminus S)} 
+%\end{align*}
+%with
+%\begin{align*}
+%c_s = |\{(u,v) : u \in S, v \not\in S\}|
+%\end{align*}
+%
+%best conductance cut 
+%
+%modularity for bipartite networks: \cite{barber2007modularity}
+%
+%
+%\cite{andersen2006local}
+%local parititoning algorithm using a variation of PageRank
+%the ordering of vertices produced by PageRank produces a cut with small conductance
+
+%\section{real-time}
+%
+%\cite{leung2009towards}
+%analyse `label propagation/epidemic' a technique proposed in \cite{raghavan2007near}
+
+\section{spectral-based}
+
+spectral clustering
+
+\cite{donetti2004detecting}
+based on spectral components of graph
+select g eigen vectors and project points to g-dimensional space
+group with traditional hierarchgical clustering techiniques and maximise modularity
+
+
+%\section{overlapping}
+
+%%\cite{adamcsek2006cfinder}
+%%cfinder
+%%first algorithm to consider overlapping communities
+%%rolls k-cliques across networks 
+%%computationally expensive -- time increases exponentially with graph size
+%
+%
+%%\cite{palla2005uncovering}
+%%clique percolation method (CPM)
+%%overlapping large scale networks
+%%communities are unions of k-cliques
+%
+%\cite{shen2009detect} 
+%proposed EAGLE to detect hierarchical and overlapping communities on the word association and scientific collaboration networks
+
+%\cite{lancichinetti2009detecting}
+%first algorithm for both hierarchical and overlapping communities
+%local algorithm to optimise 
+%\begin{align*}
+%f_G = \frac{k_{in}^G}{(k_{in}^G + k_{out}^G)^\alpha}
+%\end{align*}
+%
+%\cite{psorakis2011overlapping}
+%bayesian non-negative matrix factorisation 
+%`soft-partitioning' and assigns node participation scores to modules
+
+
+%\cite{reichardt2006statistical}
+%potts
+%finding ground state of spin
+%can find hierarchies and overlap
+%`communities structure interpreted as the spin configuration that minimises energy of spin glass'
+%uses modularity of random graphs as null model 
+%
+%\cite{ronhovde2009multiresolution}
+%potts method
+%minimise hamiltonian of potts-like spin model
+%resolution parameter for scale of communities to detect
+
+
+%\cite{pons2011post}
+%two contributions:
+%multi-scale quality functions that can uncover hieracrhical communities and produce several differnent partitions.
+%post-processing of clusters found by hierarchical methods (encoded in a dendogram)
+%
+%detailed overview: \cite{xie2013overlapping}
+
+\cite{balcan2013modeling}
+formalised tight communities and hierarchical structures
+
+\section{EA}
+
+locus-based adjacency \cite{park1998genetic}
+
+\cite{handl2007evolutionary}
+proposed MOCK a multi objective EA for clustering with automatic k-determination
+two objective functions - connectedness and deviation
+two phases - clustering using adapted PESA-II and an encoded that does not require k a priori
+model selection that selected best clustering based on synthetic unclustered data generated from a poisson distribution
+
+\cite{pizzuti2008ga}
+defined quality function based on power mean
+changing power $r$ changes the weight of densely inter-connected nodes
+
+\section{Neural networks}
+
+\cite{defferrard2016convolutional}
+generalised CNNS for graph input
+
+
+\cite{kipf2016semi}
+variant of CNNS designed specifically for graphs
+semi-supervised (some nodes are labelled)
+encodes both graph structure and node features
+
+
+\section{SOM}
+
+%seminal paper \cite{kohonen1990self} based on earlier work about topological ordering \cite{kohonen1982self}
+%later work by kohonen -%- LVQ \cite{kohonen1995learning}
+
+%\cite{kiang2001extending}
+%clustering is under researched
+%successful for classification:
+%medical diagnosis \cite{vercauteren1990classification}
+%image and character recognition \cite{sabourin1993modeling,delbimbo1993three}
+%speech recognition \cite{leinonen1993self}
+
+%\cite{kiang2001extending} clusters SOM output using contiguity constrained clustering
+%also \cite{vesanto2000clustering} clusters output of SOM
+%-compared k-means and hierarchical
+%performs well against clustering alone with less computation time
+
+
+%\cite{fritzke1994growing}
+%unsupervised and supervised (RBF) SOM for clustering
+%automatically finds network structure and size
+%controlled growth and removal
+
+
+\cite{yamakawa2006self}
+som with graph input
+constrained weights to point to edges on a graph
+shortest path metric is used
+\begin{align*}
+w = (n_i, n_j, \beta)
+\end{align*}
+
+
+\bibliography{references}
+\bibliographystyle{unsrt}
+
+\end{document}

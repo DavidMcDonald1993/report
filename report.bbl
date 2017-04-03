@@ -1,0 +1,393 @@
+\begin{thebibliography}{10}
+
+\bibitem{fortunato2016community}
+Santo Fortunato and Darko Hric.
+\newblock Community detection in networks: A user guide.
+\newblock {\em Physics Reports}, 659:1--44, 2016.
+
+\bibitem{cai2016survey}
+Qing Cai, Lijia Ma, Maoguo Gong, and Dayong Tian.
+\newblock A survey on network community detection based on evolutionary
+  computation.
+\newblock {\em International Journal of Bio-Inspired Computation}, 8(2):84--98,
+  2016.
+
+\bibitem{zhang2016community}
+Lingjia Zhang.
+\newblock {\em Community detection in network analysis: a survey}.
+\newblock PhD thesis, NA, 2016.
+
+\bibitem{xie2013overlapping}
+Jierui Xie, Stephen Kelley, and Boleslaw~K Szymanski.
+\newblock Overlapping community detection in networks: The state-of-the-art and
+  comparative study.
+\newblock {\em ACM Computing Surveys (csur)}, 45(4):43, 2013.
+
+\bibitem{kernighan1970efficient}
+Brian~W Kernighan and Shen Lin.
+\newblock An efficient heuristic procedure for partitioning graphs.
+\newblock {\em Bell system technical journal}, 49(2):291--307, 1970.
+
+\bibitem{fiduccia1982linear}
+Charles~M Fiduccia and Robert~M Mattheyses.
+\newblock A linear-time heuristic for improving network partitions.
+\newblock In {\em Design Automation, 1982. 19th Conference on}, pages 175--181.
+  IEEE, 1982.
+
+\bibitem{ding2001min}
+Chris~HQ Ding, Xiaofeng He, Hongyuan Zha, Ming Gu, and Horst~D Simon.
+\newblock A min-max cut algorithm for graph partitioning and data clustering.
+\newblock In {\em Data Mining, 2001. ICDM 2001, Proceedings IEEE International
+  Conference on}, pages 107--114. IEEE, 2001.
+
+\bibitem{wei1991ratio}
+Y-C Wei and C-K Cheng.
+\newblock Ratio cut partitioning for hierarchical designs.
+\newblock {\em IEEE Transactions on Computer-Aided Design of Integrated
+  Circuits and Systems}, 10(7):911--921, 1991.
+
+\bibitem{shi2000normalized}
+Jianbo Shi and Jitendra Malik.
+\newblock Normalized cuts and image segmentation.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  22(8):888--905, 2000.
+
+\bibitem{barber2007modularity}
+Michael~J Barber.
+\newblock Modularity and community detection in bipartite networks.
+\newblock {\em Physical Review E}, 76(6):066102, 2007.
+
+\bibitem{andersen2006local}
+Reid Andersen, Fan Chung, and Kevin Lang.
+\newblock Local graph partitioning using pagerank vectors.
+\newblock In {\em 2006 47th Annual IEEE Symposium on Foundations of Computer
+  Science (FOCS'06)}, pages 475--486. IEEE, 2006.
+
+\bibitem{karypis1998fast}
+George Karypis and Vipin Kumar.
+\newblock A fast and high quality multilevel scheme for partitioning irregular
+  graphs.
+\newblock {\em SIAM Journal on scientific Computing}, 20(1):359--392, 1998.
+
+\bibitem{gallo1989fast}
+Giorgio Gallo, Michael~D Grigoriadis, and Robert~E Tarjan.
+\newblock A fast parametric maximum flow algorithm and applications.
+\newblock {\em SIAM Journal on Computing}, 18(1):30--55, 1989.
+
+\bibitem{lang2004flow}
+Kevin Lang and Satish Rao.
+\newblock A flow-based method for improving the expansion or conductance of
+  graph cuts.
+\newblock In {\em International Conference on Integer Programming and
+  Combinatorial Optimization}, pages 325--337. Springer, 2004.
+
+\bibitem{van2001graph}
+Stijn~Marinus Van~Dongen.
+\newblock {\em Graph clustering by flow simulation}.
+\newblock PhD thesis, 2001.
+
+\bibitem{girvan2002community}
+Michelle Girvan and Mark~EJ Newman.
+\newblock Community structure in social and biological networks.
+\newblock {\em Proceedings of the national academy of sciences},
+  99(12):7821--7826, 2002.
+
+\bibitem{newman2004finding}
+Mark~EJ Newman and Michelle Girvan.
+\newblock Finding and evaluating community structure in networks.
+\newblock {\em Physical review E}, 69(2):026113, 2004.
+
+\bibitem{fortunato2007resolution}
+Santo Fortunato and Marc Barthelemy.
+\newblock Resolution limit in community detection.
+\newblock {\em Proceedings of the National Academy of Sciences}, 104(1):36--41,
+  2007.
+
+\bibitem{clauset2004finding}
+Aaron Clauset, Mark~EJ Newman, and Cristopher Moore.
+\newblock Finding community structure in very large networks.
+\newblock {\em Physical review E}, 70(6):066111, 2004.
+
+\bibitem{newman2005power}
+Mark~EJ Newman.
+\newblock Power laws, pareto distributions and zipf's law.
+\newblock {\em Contemporary physics}, 46(5):323--351, 2005.
+
+\bibitem{guimera2005functional}
+Roger Guimera and Luis A~Nunes Amaral.
+\newblock Functional cartography of complex metabolic networks.
+\newblock {\em Nature}, 433(7028):895--900, 2005.
+
+\bibitem{blondel2008fast}
+Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of statistical mechanics: theory and experiment},
+  2008(10):P10008, 2008.
+
+\bibitem{rosvall2007information}
+Martin Rosvall and Carl~T Bergstrom.
+\newblock An information-theoretic framework for resolving community structure
+  in complex networks.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  104(18):7327--7331, 2007.
+
+\bibitem{rosvall2008maps}
+Martin Rosvall and Carl~T Bergstrom.
+\newblock Maps of random walks on complex networks reveal community structure.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  105(4):1118--1123, 2008.
+
+\bibitem{yang2013hierarchical}
+Bo~Yang, Jin Di, Jiming Liu, and Dayou Liu.
+\newblock Hierarchical community detection with applications to real-world
+  network analysis.
+\newblock {\em Data \& Knowledge Engineering}, 83:20--38, 2013.
+
+\bibitem{raghavan2007near}
+Usha~Nandini Raghavan, R{\'e}ka Albert, and Soundar Kumara.
+\newblock Near linear time algorithm to detect community structures in
+  large-scale networks.
+\newblock {\em Physical review E}, 76(3):036106, 2007.
+
+\bibitem{leung2009towards}
+Ian~XY Leung, Pan Hui, Pietro Lio, and Jon Crowcroft.
+\newblock Towards real-time community detection in large networks.
+\newblock {\em Physical Review E}, 79(6):066107, 2009.
+
+\bibitem{ronhovde2010local}
+Peter Ronhovde and Zohar Nussinov.
+\newblock Local resolution-limit-free potts model for community detection.
+\newblock {\em Physical Review E}, 81(4):046114, 2010.
+
+\bibitem{donath1973lower}
+William~E Donath and Alan~J Hoffman.
+\newblock Lower bounds for the partitioning of graphs.
+\newblock {\em IBM Journal of Research and Development}, 17(5):420--425, 1973.
+
+\bibitem{meila2001random}
+Marina Meila and Jianbo Shi.
+\newblock A random walks view of spectral segmentation.
+\newblock 2001.
+
+\bibitem{ng2002spectral}
+Andrew~Y Ng, Michael~I Jordan, Yair Weiss, et~al.
+\newblock On spectral clustering: Analysis and an algorithm.
+\newblock {\em Advances in neural information processing systems}, 2:849--856,
+  2002.
+
+\bibitem{ding2004tutorial}
+Chris Ding.
+\newblock A tutorial on spectral clustering.
+\newblock In {\em Talk presented at ICML.}, 2004.
+
+\bibitem{von2007tutorial}
+Ulrike Von~Luxburg.
+\newblock A tutorial on spectral clustering.
+\newblock {\em Statistics and computing}, 17(4):395--416, 2007.
+
+\bibitem{donetti2004detecting}
+L~Donetti and MA~Munoz.
+\newblock Detecting network communities: a new and systematic approach.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment P},
+  10012:2004, 2004.
+
+\bibitem{park1998genetic}
+YoungJa Park and ManSuk Song.
+\newblock A genetic algorithm for clustering problems.
+\newblock In {\em Proceedings of the third annual conference on genetic
+  programming}, pages 568--575, 1998.
+
+\bibitem{handl2007evolutionary}
+Julia Handl and Joshua Knowles.
+\newblock An evolutionary approach to multiobjective clustering.
+\newblock {\em IEEE transactions on Evolutionary Computation}, 11(1):56--76,
+  2007.
+
+\bibitem{pizzuti2008ga}
+Clara Pizzuti.
+\newblock Ga-net: A genetic algorithm for community detection in social
+  networks.
+\newblock In {\em International Conference on Parallel Problem Solving from
+  Nature}, pages 1081--1090. Springer, 2008.
+
+\bibitem{defferrard2016convolutional}
+Micha{\"e}l Defferrard, Xavier Bresson, and Pierre Vandergheynst.
+\newblock Convolutional neural networks on graphs with fast localized spectral
+  filtering.
+\newblock {\em arXiv preprint arXiv:1606.09375}, 2016.
+
+\bibitem{kipf2016semi}
+Thomas~N Kipf and Max Welling.
+\newblock Semi-supervised classification with graph convolutional networks.
+\newblock {\em arXiv preprint arXiv:1609.02907}, 2016.
+
+\bibitem{adamcsek2006cfinder}
+Bal{\'a}zs Adamcsek, Gergely Palla, Ill{\'e}s~J Farkas, Imre Der{\'e}nyi, and
+  Tam{\'a}s Vicsek.
+\newblock Cfinder: locating cliques and overlapping modules in biological
+  networks.
+\newblock {\em Bioinformatics}, 22(8):1021--1023, 2006.
+
+\bibitem{palla2005uncovering}
+Gergely Palla, Imre Der{\'e}nyi, Ill{\'e}s Farkas, and Tam{\'a}s Vicsek.
+\newblock Uncovering the overlapping community structure of complex networks in
+  nature and society.
+\newblock {\em Nature}, 435(7043):814--818, 2005.
+
+\bibitem{shen2009detect}
+Huawei Shen, Xueqi Cheng, Kai Cai, and Mao-Bin Hu.
+\newblock Detect overlapping and hierarchical community structure in networks.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  388(8):1706--1712, 2009.
+
+\bibitem{lancichinetti2009detecting}
+Andrea Lancichinetti, Santo Fortunato, and J{\'a}nos Kert{\'e}sz.
+\newblock Detecting the overlapping and hierarchical community structure in
+  complex networks.
+\newblock {\em New Journal of Physics}, 11(3):033015, 2009.
+
+\bibitem{reichardt2006statistical}
+J{\"o}rg Reichardt and Stefan Bornholdt.
+\newblock Statistical mechanics of community detection.
+\newblock {\em Physical Review E}, 74(1):016110, 2006.
+
+\bibitem{ronhovde2009multiresolution}
+Peter Ronhovde and Zohar Nussinov.
+\newblock Multiresolution community detection for megascale networks by
+  information-based replica correlations.
+\newblock {\em Physical Review E}, 80(1):016109, 2009.
+
+\bibitem{pons2011post}
+Pascal Pons and Matthieu Latapy.
+\newblock Post-processing hierarchical community structures: Quality
+  improvements and multi-scale view.
+\newblock {\em Theoretical Computer Science}, 412(8):892--900, 2011.
+
+\bibitem{psorakis2011overlapping}
+Ioannis Psorakis, Stephen Roberts, Mark Ebden, and Ben Sheldon.
+\newblock Overlapping community detection using bayesian non-negative matrix
+  factorization.
+\newblock {\em Physical Review E}, 83(6):066114, 2011.
+
+\bibitem{kohonen1982self}
+Teuvo Kohonen.
+\newblock Self-organized formation of topologically correct feature maps.
+\newblock {\em Biological cybernetics}, 43(1):59--69, 1982.
+
+\bibitem{kohonen1990self}
+Teuvo Kohonen.
+\newblock The self-organizing map.
+\newblock {\em Proceedings of the IEEE}, 78(9):1464--1480, 1990.
+
+\bibitem{kohonen1995learning}
+Teuvo Kohonen.
+\newblock Learning vector quantization.
+\newblock In {\em Self-Organizing Maps}, pages 175--189. Springer, 1995.
+
+\bibitem{kiang2001extending}
+Melody~Y Kiang.
+\newblock Extending the kohonen self-organizing map networks for clustering
+  analysis.
+\newblock {\em Computational Statistics \& Data Analysis}, 38(2):161--180,
+  2001.
+
+\bibitem{vercauteren1990classification}
+L~Vercauteren, G~Sieben, and M~Praet.
+\newblock The classification of brain tumours by a topological map.
+\newblock 1990.
+
+\bibitem{sabourin1993modeling}
+Michael Sabourin and Amar Mitiche.
+\newblock Modeling and classification of shape using a kohonen associative
+  memory with selective multiresolution.
+\newblock {\em Neural Networks}, 6(2):275--283, 1993.
+
+\bibitem{delbimbo1993three}
+Alberto Delbimbo, Leonardo Landi, and Simone Santini.
+\newblock Three-dimensional planar-faced object classification with kohonen
+  maps.
+\newblock {\em Optical Engineering}, 32(6):1222--1234, 1993.
+
+\bibitem{leinonen1993self}
+Lea Leinonen, Tapio Hiltunen, Kari Torkkola, and Jari Kangas.
+\newblock Self-organized acoustic feature map in detection of fricative-vowel
+  coarticulation.
+\newblock {\em The Journal of the Acoustical Society of America},
+  93(6):3468--3474, 1993.
+
+\bibitem{fritzke1994growing}
+Bernd Fritzke.
+\newblock Growing cell structures—a self-organizing network for unsupervised
+  and supervised learning.
+\newblock {\em Neural networks}, 7(9):1441--1460, 1994.
+
+\bibitem{vesanto2000clustering}
+Juha Vesanto and Esa Alhoniemi.
+\newblock Clustering of the self-organizing map.
+\newblock {\em IEEE transactions on neural networks}, 11(3):586--600, 2000.
+
+\bibitem{yamakawa2006self}
+Takeshi Yamakawa, Keiichi Horio, and Masaharu Hoshino.
+\newblock Self-organizing map with input data represented as graph.
+\newblock In {\em International Conference on Neural Information Processing},
+  pages 907--914. Springer, 2006.
+
+\bibitem{cao2013going}
+Mengfei Cao, Hao Zhang, Jisoo Park, Noah~M Daniels, Mark~E Crovella, Lenore~J
+  Cowen, and Benjamin Hescott.
+\newblock Going the distance for protein function prediction: a new distance
+  metric for protein interaction networks.
+\newblock {\em PloS one}, 8(10):e76339, 2013.
+
+\bibitem{snoek2012practical}
+Jasper Snoek, Hugo Larochelle, and Ryan~P Adams.
+\newblock Practical bayesian optimization of machine learning algorithms.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2951--2959, 2012.
+
+\bibitem{swersky2013multi}
+Kevin Swersky, Jasper Snoek, and Ryan~P Adams.
+\newblock Multi-task bayesian optimization.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2004--2012, 2013.
+
+\bibitem{snoek2013bayesian}
+Jasper Snoek.
+\newblock {\em Bayesian Optimization and Semiparametric Models with
+  Applications to Assistive Technology}.
+\newblock PhD thesis, Citeseer, 2013.
+
+\bibitem{snoek2014input}
+Jasper Snoek, Kevin Swersky, Richard~S Zemel, and Ryan~P Adams.
+\newblock Input warping for bayesian optimization of non-stationary functions.
+\newblock In {\em ICML}, pages 1674--1682, 2014.
+
+\bibitem{gelbart2014bayesian}
+Michael~A Gelbart, Jasper Snoek, and Ryan~P Adams.
+\newblock Bayesian optimization with unknown constraints.
+\newblock {\em arXiv preprint arXiv:1403.5607}, 2014.
+
+\bibitem{zachary1977information}
+Wayne~W Zachary.
+\newblock An information flow model for conflict and fission in small groups.
+\newblock {\em Journal of anthropological research}, pages 452--473, 1977.
+
+\bibitem{lusseau2003emergent}
+David Lusseau.
+\newblock The emergent properties of a dolphin social network.
+\newblock {\em Proceedings of the Royal Society of London B: Biological
+  Sciences}, 270(Suppl 2):S186--S188, 2003.
+
+\bibitem{lusseau2003bottlenose}
+David Lusseau, Karsten Schneider, Oliver~J Boisseau, Patti Haase, Elisabeth
+  Slooten, and Steve~M Dawson.
+\newblock The bottlenose dolphin community of doubtful sound features a large
+  proportion of long-lasting associations.
+\newblock {\em Behavioral Ecology and Sociobiology}, 54(4):396--405, 2003.
+
+\bibitem{lancichinetti2009community}
+Andrea Lancichinetti and Santo Fortunato.
+\newblock Community detection algorithms: a comparative analysis.
+\newblock {\em Physical review E}, 80(5):056117, 2009.
+
+\end{thebibliography}

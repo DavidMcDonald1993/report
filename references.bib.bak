@@ -1,0 +1,813 @@
+% Encoding: UTF-8
+
+@Article{defferrard2016convolutional,
+  author  = {Defferrard, Micha{\"e}l and Bresson, Xavier and Vandergheynst, Pierre},
+  title   = {Convolutional neural networks on graphs with fast localized spectral filtering},
+  journal = {arXiv preprint arXiv:1606.09375},
+  year    = {2016},
+}
+
+@Article{fortunato2016community,
+  title={Community detection in networks: A user guide},
+  author={Fortunato, Santo and Hric, Darko},
+  journal={Physics Reports},
+  volume={659},
+  pages={1--44},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@Article{newman2004finding,
+  title={Finding and evaluating community structure in networks},
+  author={Newman, Mark EJ and Girvan, Michelle},
+  journal={Physical review E},
+  volume={69},
+  number={2},
+  pages={026113},
+  year={2004},
+  publisher={APS}
+}
+
+@Article{cai2016survey,
+  title={A survey on network community detection based on evolutionary computation},
+  author={Cai, Qing and Ma, Lijia and Gong, Maoguo and Tian, Dayong},
+  journal={International Journal of Bio-Inspired Computation},
+  volume={8},
+  number={2},
+  pages={84--98},
+  year={2016},
+  publisher={Inderscience Publishers (IEL)}
+}
+
+@Article{kipf2016semi,
+  title={Semi-supervised classification with graph convolutional networks},
+  author={Kipf, Thomas N and Welling, Max},
+  journal={arXiv preprint arXiv:1609.02907},
+  year={2016}
+}
+
+@InProceedings{balcan2013modeling,
+  title={Modeling and detecting community hierarchies},
+  author={Balcan, Maria Florina and Liang, Yingyu},
+  booktitle={International Workshop on Similarity-Based Pattern Recognition},
+  pages={160--175},
+  year={2013},
+  organization={Springer}
+}
+
+@PhdThesis{zhang2016community,
+  author = {Zhang, Lingjia},
+  title  = {Community detection in network analysis: a survey},
+  school = {NA},
+  year   = {2016},
+}
+
+@Article{barnett2016feature,
+  author  = {Barnett, Ian and Malik, Nishant and Kuijjer, Marieke L and Mucha, Peter J and Onnela, Jukka-Pekka},
+  title   = {Feature-Based Classification of Networks},
+  journal = {arXiv preprint arXiv:1610.05868},
+  year    = {2016},
+}
+
+@Article{radicchi2004defining,
+  title={Defining and identifying communities in networks},
+  author={Radicchi, Filippo and Castellano, Claudio and Cecconi, Federico and Loreto, Vittorio and Parisi, Domenico},
+  journal={Proceedings of the National Academy of Sciences of the United States of America},
+  volume={101},
+  number={9},
+  pages={2658--2663},
+  year={2004},
+  publisher={National Acad Sciences}
+}
+
+@Article{palla2005uncovering,
+  title={Uncovering the overlapping community structure of complex networks in nature and society},
+  author={Palla, Gergely and Der{\'e}nyi, Imre and Farkas, Ill{\'e}s and Vicsek, Tam{\'a}s},
+  journal={Nature},
+  volume={435},
+  number={7043},
+  pages={814--818},
+  year={2005},
+  publisher={Nature Publishing Group}
+}
+
+@Article{adamcsek2006cfinder,
+  title={CFinder: locating cliques and overlapping modules in biological networks},
+  author={Adamcsek, Bal{\'a}zs and Palla, Gergely and Farkas, Ill{\'e}s J and Der{\'e}nyi, Imre and Vicsek, Tam{\'a}s},
+  journal={Bioinformatics},
+  volume={22},
+  number={8},
+  pages={1021--1023},
+  year={2006},
+  publisher={Oxford Univ Press}
+}
+
+@Article{clauset2004finding,
+  title={Finding community structure in very large networks},
+  author={Clauset, Aaron and Newman, Mark EJ and Moore, Cristopher},
+  journal={Physical review E},
+  volume={70},
+  number={6},
+  pages={066111},
+  year={2004},
+  publisher={APS}
+}
+
+
+
+@Article{yang2013hierarchical,
+  title={Hierarchical community detection with applications to real-world network analysis},
+  author={Yang, Bo and Di, Jin and Liu, Jiming and Liu, Dayou},
+  journal={Data \& Knowledge Engineering},
+  volume={83},
+  pages={20--38},
+  year={2013},
+  publisher={Elsevier}
+}
+
+@Article{blondel2008fast,
+  title={Fast unfolding of communities in large networks},
+  author={Blondel, Vincent D and Guillaume, Jean-Loup and Lambiotte, Renaud and Lefebvre, Etienne},
+  journal={Journal of statistical mechanics: theory and experiment},
+  volume={2008},
+  number={10},
+  pages={P10008},
+  year={2008},
+  publisher={IOP Publishing}
+}
+
+@Article{guimera2005functional,
+  title={Functional cartography of complex metabolic networks},
+  author={Guimera, Roger and Amaral, Luis A Nunes},
+  journal={Nature},
+  volume={433},
+  number={7028},
+  pages={895--900},
+  year={2005},
+  publisher={Nature Publishing Group}
+}
+
+@Article{newman2005power,
+  title={Power laws, Pareto distributions and Zipf's law},
+  author={Newman, Mark EJ},
+  journal={Contemporary physics},
+  volume={46},
+  number={5},
+  pages={323--351},
+  year={2005},
+  publisher={Taylor \& Francis}
+}
+
+@Article{benson2016higher,
+  author    = {Benson, Austin R and Gleich, David F and Leskovec, Jure},
+  title     = {Higher-order organization of complex networks},
+  journal   = {Science},
+  year      = {2016},
+  volume    = {353},
+  number    = {6295},
+  pages     = {163--166},
+  publisher = {American Association for the Advancement of Science},
+}
+
+@Article{li2010self,
+  author    = {Li, Zhenping and Wang, Ruisheng and Zhang, Xiang-Sun and Chen, Luonan},
+  title     = {Self-organizing map of complex networks for community detection},
+  journal   = {Journal of Systems Science and Complexity},
+  year      = {2010},
+  volume    = {23},
+  number    = {5},
+  pages     = {931--941},
+  publisher = {Springer},
+}
+
+@Article{sabourin1993modeling,
+  title={Modeling and classification of shape using a Kohonen associative memory with selective multiresolution},
+  author={Sabourin, Michael and Mitiche, Amar},
+  journal={Neural Networks},
+  volume={6},
+  number={2},
+  pages={275--283},
+  year={1993},
+  publisher={Elsevier}
+}
+
+@Article{vesanto2000clustering,
+  title={Clustering of the self-organizing map},
+  author={Vesanto, Juha and Alhoniemi, Esa},
+  journal={IEEE transactions on neural networks},
+  volume={11},
+  number={3},
+  pages={586--600},
+  year={2000},
+  publisher={Ieee}
+}
+
+@Article{delbimbo1993three,
+  title={Three-dimensional planar-faced object classification with Kohonen maps},
+  author={Delbimbo, Alberto and Landi, Leonardo and Santini, Simone},
+  journal={Optical Engineering},
+  volume={32},
+  number={6},
+  pages={1222--1234},
+  year={1993},
+  publisher={International Society for Optics and Photonics}
+}
+
+@InProceedings{yamakawa2006self,
+  author       = {Yamakawa, Takeshi and Horio, Keiichi and Hoshino, Masaharu},
+  title        = {Self-organizing map with input data represented as graph},
+  booktitle    = {International Conference on Neural Information Processing},
+  year         = {2006},
+  pages        = {907--914},
+  organization = {Springer},
+}
+
+@Article{kiang2001extending,
+  title={Extending the Kohonen self-organizing map networks for clustering analysis},
+  author={Kiang, Melody Y},
+  journal={Computational Statistics \& Data Analysis},
+  volume={38},
+  number={2},
+  pages={161--180},
+  year={2001},
+  publisher={Elsevier}
+}
+
+@Article{leinonen1993self,
+  title={Self-organized acoustic feature map in detection of fricative-vowel coarticulation},
+  author={Leinonen, Lea and Hiltunen, Tapio and Torkkola, Kari and Kangas, Jari},
+  journal={The Journal of the Acoustical Society of America},
+  volume={93},
+  number={6},
+  pages={3468--3474},
+  year={1993},
+  publisher={Acoustical Society of America}
+}
+
+@Article{vercauteren1990classification,
+  author    = {Vercauteren, L and Sieben, G and Praet, M},
+  title     = {The classification of brain tumours by a topological map},
+  journal   = {NA},
+  year      = {1990},
+  publisher = {Kluwer},
+}
+
+@Article{rauber2002growing,
+  author    = {Rauber, Andreas and Merkl, Dieter and Dittenbach, Michael},
+  title     = {The growing hierarchical self-organizing map: exploratory analysis of high-dimensional data},
+  journal   = {IEEE Transactions on Neural Networks},
+  year      = {2002},
+  volume    = {13},
+  number    = {6},
+  pages     = {1331--1341},
+  publisher = {IEEE},
+}
+
+@Article{dittenbach2002uncovering,
+  author    = {Dittenbach, Michael and Rauber, Andreas and Merkl, Dieter},
+  title     = {Uncovering hierarchical structure in data using the growing hierarchical self-organizing map},
+  journal   = {Neurocomputing},
+  year      = {2002},
+  volume    = {48},
+  number    = {1},
+  pages     = {199--216},
+  publisher = {Elsevier},
+}
+
+@InProceedings{dittenbach2000growing,
+  author    = {Dittenbach, Michael and Merkl, Dieter and Rauber, Andreas},
+  title     = {The Growing Hierarchical Self-Organizing Map.},
+  booktitle = {IJCNN (6)},
+  year      = {2000},
+  pages     = {15--19},
+}
+
+@Article{zachary1977information,
+  author    = {Zachary, Wayne W},
+  title     = {An information flow model for conflict and fission in small groups},
+  journal   = {Journal of anthropological research},
+  year      = {1977},
+  pages     = {452--473},
+  publisher = {JSTOR},
+}
+
+@Article{cao2013going,
+  author    = {Cao, Mengfei and Zhang, Hao and Park, Jisoo and Daniels, Noah M and Crovella, Mark E and Cowen, Lenore J and Hescott, Benjamin},
+  title     = {Going the distance for protein function prediction: a new distance metric for protein interaction networks},
+  journal   = {PloS one},
+  year      = {2013},
+  volume    = {8},
+  number    = {10},
+  pages     = {e76339},
+  publisher = {Public Library of Science},
+}
+
+@Article{gelbart2014bayesian,
+  author  = {Gelbart, Michael A and Snoek, Jasper and Adams, Ryan P},
+  title   = {Bayesian optimization with unknown constraints},
+  journal = {arXiv preprint arXiv:1403.5607},
+  year    = {2014},
+}
+
+@Article{ronhovde2010local,
+  title={Local resolution-limit-free Potts model for community detection},
+  author={Ronhovde, Peter and Nussinov, Zohar},
+  journal={Physical Review E},
+  volume={81},
+  number={4},
+  pages={046114},
+  year={2010},
+  publisher={APS}
+}
+
+@Article{rosvall2007information,
+  title={An information-theoretic framework for resolving community structure in complex networks},
+  author={Rosvall, Martin and Bergstrom, Carl T},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={104},
+  number={18},
+  pages={7327--7331},
+  year={2007},
+  publisher={National Acad Sciences}
+}
+
+@Article{fortunato2007resolution,
+  title={Resolution limit in community detection},
+  author={Fortunato, Santo and Barthelemy, Marc},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={104},
+  number={1},
+  pages={36--41},
+  year={2007},
+  publisher={National Acad Sciences}
+}
+
+@Article{rosvall2008maps,
+  title={Maps of random walks on complex networks reveal community structure},
+  author={Rosvall, Martin and Bergstrom, Carl T},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={105},
+  number={4},
+  pages={1118--1123},
+  year={2008},
+  publisher={National Acad Sciences}
+}
+
+@Article{ronhovde2009multiresolution,
+  title={Multiresolution community detection for megascale networks by information-based replica correlations},
+  author={Ronhovde, Peter and Nussinov, Zohar},
+  journal={Physical Review E},
+  volume={80},
+  number={1},
+  pages={016109},
+  year={2009},
+  publisher={APS}
+}
+
+@Article{newman2007mixture,
+  title={Mixture models and exploratory analysis in networks},
+  author={Newman, Mark EJ and Leicht, Elizabeth A},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={104},
+  number={23},
+  pages={9564--9569},
+  year={2007},
+  publisher={National Acad Sciences}
+}
+
+@Article{donetti2004detecting,
+  title={Detecting network communities: a new and systematic approach},
+  author={Donetti, L and Munoz, MA},
+  journal={Journal of Statistical Mechanics: Theory and Experiment P},
+  volume={10012},
+  pages={2004},
+  year={2004}
+}
+
+@InProceedings{snoek2014input,
+  author    = {Snoek, Jasper and Swersky, Kevin and Zemel, Richard S and Adams, Ryan P},
+  title     = {Input Warping for Bayesian Optimization of Non-Stationary Functions.},
+  booktitle = {ICML},
+  year      = {2014},
+  pages     = {1674--1682},
+}
+
+@Article{donath1973lower,
+  title={Lower bounds for the partitioning of graphs},
+  author={Donath, William E and Hoffman, Alan J},
+  journal={IBM Journal of Research and Development},
+  volume={17},
+  number={5},
+  pages={420--425},
+  year={1973},
+  publisher={IBM}
+}
+
+@PhdThesis{snoek2013bayesian,
+  author = {Snoek, Jasper},
+  title  = {Bayesian Optimization and Semiparametric Models with Applications to Assistive Technology},
+  school = {Citeseer},
+  year   = {2013},
+}
+
+@PhdThesis{van2001graph,
+  author = {Van Dongen, Stijn Marinus},
+  title  = {Graph clustering by flow simulation},
+  school = {NA},
+  year   = {2001},
+}
+
+@InProceedings{swersky2013multi,
+  author    = {Swersky, Kevin and Snoek, Jasper and Adams, Ryan P},
+  title     = {Multi-task bayesian optimization},
+  booktitle = {Advances in neural information processing systems},
+  year      = {2013},
+  pages     = {2004--2012},
+}
+
+@InProceedings{snoek2012practical,
+  author    = {Snoek, Jasper and Larochelle, Hugo and Adams, Ryan P},
+  title     = {Practical bayesian optimization of machine learning algorithms},
+  booktitle = {Advances in neural information processing systems},
+  year      = {2012},
+  pages     = {2951--2959},
+}
+
+@InProceedings{leskovec2010empirical,
+  title={Empirical comparison of algorithms for network community detection},
+  author={Leskovec, Jure and Lang, Kevin J and Mahoney, Michael},
+  booktitle={Proceedings of the 19th international conference on World wide web},
+  pages={631--640},
+  year={2010},
+  organization={ACM}
+}
+
+@Article{kohonen1982self,
+  title={Self-organized formation of topologically correct feature maps},
+  author={Kohonen, Teuvo},
+  journal={Biological cybernetics},
+  volume={43},
+  number={1},
+  pages={59--69},
+  year={1982},
+  publisher={Springer}
+}
+
+@Article{kohonen1990self,
+  title={The self-organizing map},
+  author={Kohonen, Teuvo},
+  journal={Proceedings of the IEEE},
+  volume={78},
+  number={9},
+  pages={1464--1480},
+  year={1990},
+  publisher={IEEE}
+}
+
+@InCollection{kohonen1995learning,
+  title={Learning vector quantization},
+  author={Kohonen, Teuvo},
+  booktitle={Self-Organizing Maps},
+  pages={175--189},
+  year={1995},
+  publisher={Springer}
+}
+
+@InProceedings{park1998genetic,
+  title={A genetic algorithm for clustering problems},
+  author={Park, YoungJa and Song, ManSuk},
+  booktitle={Proceedings of the third annual conference on genetic programming},
+  pages={568--575},
+  year={1998}
+}
+
+@Article{psorakis2011overlapping,
+  title={Overlapping community detection using bayesian non-negative matrix factorization},
+  author={Psorakis, Ioannis and Roberts, Stephen and Ebden, Mark and Sheldon, Ben},
+  journal={Physical Review E},
+  volume={83},
+  number={6},
+  pages={066114},
+  year={2011},
+  publisher={APS}
+}
+
+@Article{raghavan2007near,
+  title={Near linear time algorithm to detect community structures in large-scale networks},
+  author={Raghavan, Usha Nandini and Albert, R{\'e}ka and Kumara, Soundar},
+  journal={Physical review E},
+  volume={76},
+  number={3},
+  pages={036106},
+  year={2007},
+  publisher={APS}
+}
+
+@Article{leung2009towards,
+  title={Towards real-time community detection in large networks},
+  author={Leung, Ian XY and Hui, Pan and Lio, Pietro and Crowcroft, Jon},
+  journal={Physical Review E},
+  volume={79},
+  number={6},
+  pages={066107},
+  year={2009},
+  publisher={APS}
+}
+
+@Article{fritzke1994growing,
+  author    = {Fritzke, Bernd},
+  title     = {Growing cell structures—a self-organizing network for unsupervised and supervised learning},
+  journal   = {Neural networks},
+  year      = {1994},
+  volume    = {7},
+  number    = {9},
+  pages     = {1441--1460},
+  publisher = {Elsevier},
+}
+
+@Article{xie2013overlapping,
+  title={Overlapping community detection in networks: The state-of-the-art and comparative study},
+  author={Xie, Jierui and Kelley, Stephen and Szymanski, Boleslaw K},
+  journal={ACM Computing Surveys (csur)},
+  volume={45},
+  number={4},
+  pages={43},
+  year={2013},
+  publisher={ACM}
+}
+
+@Article{lancichinetti2009benchmarks,
+  title={Benchmarks for testing community detection algorithms on directed and weighted graphs with overlapping communities},
+  author={Lancichinetti, Andrea and Fortunato, Santo},
+  journal={Physical Review E},
+  volume={80},
+  number={1},
+  pages={016118},
+  year={2009},
+  publisher={APS}
+}
+
+@Article{lancichinetti2009detecting,
+  author    = {Lancichinetti, Andrea and Fortunato, Santo and Kert{\'e}sz, J{\'a}nos},
+  title     = {Detecting the overlapping and hierarchical community structure in complex networks},
+  journal   = {New Journal of Physics},
+  year      = {2009},
+  volume    = {11},
+  number    = {3},
+  pages     = {033015},
+  publisher = {IOP Publishing},
+}
+
+@InProceedings{borgwardt2005shortest,
+  author       = {Borgwardt, Karsten M and Kriegel, Hans-Peter},
+  title        = {Shortest-path kernels on graphs},
+  booktitle    = {Fifth IEEE International Conference on Data Mining (ICDM'05)},
+  year         = {2005},
+  pages        = {8--pp},
+  organization = {IEEE},
+}
+
+@InProceedings{neuhaus2006random,
+  author       = {Neuhaus, Michel and Bunke, Horst},
+  title        = {A random walk kernel derived from graph edit distance},
+  booktitle    = {Joint IAPR International Workshops on Statistical Techniques in Pattern Recognition (SPR) and Structural and Syntactic Pattern Recognition (SSPR)},
+  year         = {2006},
+  pages        = {191--199},
+  organization = {Springer},
+}
+
+@Article{shen2009detect,
+  author    = {Shen, Huawei and Cheng, Xueqi and Cai, Kai and Hu, Mao-Bin},
+  title     = {Detect overlapping and hierarchical community structure in networks},
+  journal   = {Physica A: Statistical Mechanics and its Applications},
+  year      = {2009},
+  volume    = {388},
+  number    = {8},
+  pages     = {1706--1712},
+  publisher = {Elsevier},
+}
+
+@Article{pons2011post,
+  author    = {Pons, Pascal and Latapy, Matthieu},
+  title     = {Post-processing hierarchical community structures: Quality improvements and multi-scale view},
+  journal   = {Theoretical Computer Science},
+  year      = {2011},
+  volume    = {412},
+  number    = {8},
+  pages     = {892--900},
+  publisher = {Elsevier},
+}
+
+@Article{handl2007evolutionary,
+  author    = {Handl, Julia and Knowles, Joshua},
+  title     = {An evolutionary approach to multiobjective clustering},
+  journal   = {IEEE transactions on Evolutionary Computation},
+  year      = {2007},
+  volume    = {11},
+  number    = {1},
+  pages     = {56--76},
+  publisher = {IEEE},
+}
+
+@Article{lusseau2003emergent,
+  title={The emergent properties of a dolphin social network},
+  author={Lusseau, David},
+  journal={Proceedings of the Royal Society of London B: Biological Sciences},
+  volume={270},
+  number={Suppl 2},
+  pages={S186--S188},
+  year={2003},
+  publisher={The Royal Society}
+}
+
+@Article{lusseau2003bottlenose,
+  title={The bottlenose dolphin community of Doubtful Sound features a large proportion of long-lasting associations},
+  author={Lusseau, David and Schneider, Karsten and Boisseau, Oliver J and Haase, Patti and Slooten, Elisabeth and Dawson, Steve M},
+  journal={Behavioral Ecology and Sociobiology},
+  volume={54},
+  number={4},
+  pages={396--405},
+  year={2003},
+  publisher={Springer}
+}
+
+@Article{lancichinetti2009community,
+  author    = {Lancichinetti, Andrea and Fortunato, Santo},
+  title     = {Community detection algorithms: a comparative analysis},
+  journal   = {Physical review E},
+  year      = {2009},
+  volume    = {80},
+  number    = {5},
+  pages     = {056117},
+  publisher = {APS},
+}
+
+@Article{kernighan1970efficient,
+  title={An efficient heuristic procedure for partitioning graphs},
+  author={Kernighan, Brian W and Lin, Shen},
+  journal={Bell system technical journal},
+  volume={49},
+  number={2},
+  pages={291--307},
+  year={1970},
+  publisher={Wiley Online Library}
+}
+
+@InProceedings{fiduccia1982linear,
+  title={A linear-time heuristic for improving network partitions},
+  author={Fiduccia, Charles M and Mattheyses, Robert M},
+  booktitle={Design Automation, 1982. 19th Conference on},
+  pages={175--181},
+  year={1982},
+  organization={IEEE}
+}
+
+@InProceedings{ding2001min,
+  title={A min-max cut algorithm for graph partitioning and data clustering},
+  author={Ding, Chris HQ and He, Xiaofeng and Zha, Hongyuan and Gu, Ming and Simon, Horst D},
+  booktitle={Data Mining, 2001. ICDM 2001, Proceedings IEEE International Conference on},
+  pages={107--114},
+  year={2001},
+  organization={IEEE}
+}
+
+@Article{wei1991ratio,
+  title={Ratio cut partitioning for hierarchical designs},
+  author={Wei, Y-C and Cheng, C-K},
+  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+  volume={10},
+  number={7},
+  pages={911--921},
+  year={1991},
+  publisher={IEEE}
+}
+
+@Article{shi2000normalized,
+  title={Normalized cuts and image segmentation},
+  author={Shi, Jianbo and Malik, Jitendra},
+  journal={IEEE Transactions on pattern analysis and machine intelligence},
+  volume={22},
+  number={8},
+  pages={888--905},
+  year={2000},
+  publisher={IEEE}
+}
+
+@Article{meila2001random,
+  author    = {Meila, Marina and Shi, Jianbo},
+  title     = {A random walks view of spectral segmentation},
+  journal   = {NA},
+  year      = {2001},
+  publisher = {Citeseer},
+}
+
+@Article{ng2002spectral,
+  title={On spectral clustering: Analysis and an algorithm},
+  author={Ng, Andrew Y and Jordan, Michael I and Weiss, Yair and others},
+  journal={Advances in neural information processing systems},
+  volume={2},
+  pages={849--856},
+  year={2002},
+  publisher={MIT; 1998}
+}
+
+@InProceedings{ding2004tutorial,
+  title={A tutorial on spectral clustering},
+  author={Ding, Chris},
+  booktitle={Talk presented at ICML.},
+  year={2004}
+}
+
+@Article{von2007tutorial,
+  title={A tutorial on spectral clustering},
+  author={Von Luxburg, Ulrike},
+  journal={Statistics and computing},
+  volume={17},
+  number={4},
+  pages={395--416},
+  year={2007},
+  publisher={Springer}
+}
+
+@Article{reichardt2006statistical,
+  title={Statistical mechanics of community detection},
+  author={Reichardt, J{\"o}rg and Bornholdt, Stefan},
+  journal={Physical Review E},
+  volume={74},
+  number={1},
+  pages={016110},
+  year={2006},
+  publisher={APS}
+}
+
+@Article{barber2007modularity,
+  title={Modularity and community detection in bipartite networks},
+  author={Barber, Michael J},
+  journal={Physical Review E},
+  volume={76},
+  number={6},
+  pages={066102},
+  year={2007},
+  publisher={APS}
+}
+
+@Article{girvan2002community,
+  author    = {Girvan, Michelle and Newman, Mark EJ},
+  title     = {Community structure in social and biological networks},
+  journal   = {Proceedings of the national academy of sciences},
+  year      = {2002},
+  volume    = {99},
+  number    = {12},
+  pages     = {7821--7826},
+  publisher = {National Acad Sciences},
+}
+
+@InProceedings{andersen2006local,
+  title={Local graph partitioning using pagerank vectors},
+  author={Andersen, Reid and Chung, Fan and Lang, Kevin},
+  booktitle={2006 47th Annual IEEE Symposium on Foundations of Computer Science (FOCS'06)},
+  pages={475--486},
+  year={2006},
+  organization={IEEE}
+}
+
+@Article{karypis1998fast,
+  title={A fast and high quality multilevel scheme for partitioning irregular graphs},
+  author={Karypis, George and Kumar, Vipin},
+  journal={SIAM Journal on scientific Computing},
+  volume={20},
+  number={1},
+  pages={359--392},
+  year={1998},
+  publisher={SIAM}
+}
+
+@Article{gallo1989fast,
+  title={A fast parametric maximum flow algorithm and applications},
+  author={Gallo, Giorgio and Grigoriadis, Michael D and Tarjan, Robert E},
+  journal={SIAM Journal on Computing},
+  volume={18},
+  number={1},
+  pages={30--55},
+  year={1989},
+  publisher={SIAM}
+}
+
+@InProceedings{lang2004flow,
+  title={A flow-based method for improving the expansion or conductance of graph cuts},
+  author={Lang, Kevin and Rao, Satish},
+  booktitle={International Conference on Integer Programming and Combinatorial Optimization},
+  pages={325--337},
+  year={2004},
+  organization={Springer}
+}
+
+@InProceedings{pizzuti2008ga,
+  title={Ga-net: A genetic algorithm for community detection in social networks},
+  author={Pizzuti, Clara},
+  booktitle={International Conference on Parallel Problem Solving from Nature},
+  pages={1081--1090},
+  year={2008},
+  organization={Springer}
+}
+@Comment{jabref-meta: databaseType:bibtex;}

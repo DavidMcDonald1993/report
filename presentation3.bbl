@@ -1,0 +1,47 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Blondel \bgroup \em et al.\egroup
+  }{2008}]{blondel2008fast}
+Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of statistical mechanics: theory and experiment},
+  2008(10):P10008, 2008.
+
+\bibitem[\protect\citeauthoryear{Clauset \bgroup \em et al.\egroup
+  }{2004}]{clauset2004finding}
+Aaron Clauset, Mark~EJ Newman, and Cristopher Moore.
+\newblock Finding community structure in very large networks.
+\newblock {\em Physical review E}, 70(6):066111, 2004.
+
+\bibitem[\protect\citeauthoryear{Dittenbach \bgroup \em et al.\egroup
+  }{2000}]{dittenbach2000growing}
+Michael Dittenbach, Dieter Merkl, and Andreas Rauber.
+\newblock The growing hierarchical self-organizing map.
+\newblock In {\em IJCNN (6)}, pages 15--19, 2000.
+
+\bibitem[\protect\citeauthoryear{Lancichinetti and
+  Fortunato}{2009}]{lancichinetti2009community}
+Andrea Lancichinetti and Santo Fortunato.
+\newblock Community detection algorithms: a comparative analysis.
+\newblock {\em Physical review E}, 80(5):056117, 2009.
+
+\bibitem[\protect\citeauthoryear{Snoek \bgroup \em et al.\egroup
+  }{2012}]{snoek2012practical}
+Jasper Snoek, Hugo Larochelle, and Ryan~P Adams.
+\newblock Practical bayesian optimization of machine learning algorithms.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2951--2959, 2012.
+
+\bibitem[\protect\citeauthoryear{Van~Dongen}{2001}]{van2001graph}
+Stijn~Marinus Van~Dongen.
+\newblock {\em Graph clustering by flow simulation}.
+\newblock PhD thesis, 2001.
+
+\bibitem[\protect\citeauthoryear{Yang \bgroup \em et al.\egroup
+  }{2013}]{yang2013hierarchical}
+Bo~Yang, Jin Di, Jiming Liu, and Dayou Liu.
+\newblock Hierarchical community detection with applications to real-world
+  network analysis.
+\newblock {\em Data \& Knowledge Engineering}, 83:20--38, 2013.
+
+\end{thebibliography}

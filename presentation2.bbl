@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{rauber2002growing}
+Andreas Rauber, Dieter Merkl, and Michael Dittenbach.
+\newblock The growing hierarchical self-organizing map: exploratory analysis of
+  high-dimensional data.
+\newblock {\em IEEE Transactions on Neural Networks}, 13(6):1331--1341, 2002.
+
+\bibitem{gelbart2014bayesian}
+Michael~A Gelbart, Jasper Snoek, and Ryan~P Adams.
+\newblock Bayesian optimization with unknown constraints.
+\newblock {\em arXiv preprint arXiv:1403.5607}, 2014.
+
+\bibitem{snoek2014input}
+Jasper Snoek, Kevin Swersky, Richard~S Zemel, and Ryan~P Adams.
+\newblock Input warping for bayesian optimization of non-stationary functions.
+\newblock In {\em ICML}, pages 1674--1682, 2014.
+
+\bibitem{snoek2013bayesian}
+Jasper Snoek.
+\newblock {\em Bayesian Optimization and Semiparametric Models with
+  Applications to Assistive Technology}.
+\newblock PhD thesis, Citeseer, 2013.
+
+\end{thebibliography}

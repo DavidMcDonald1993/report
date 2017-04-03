@@ -1,0 +1,30 @@
+\documentclass{bhamthesis}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{verbatim}
+
+\title{\Huge \textbf{Self Organising Maps for Community Detection}}
+\author{David McDonald, Dr. Shan He}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	content.
+\end{abstract}
+
+\chapter*{Acknowledgements}
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\chapter{Literature Review}
+
+\chapter{Method}
+
+\chapter{Results}
+
+\end{document}
