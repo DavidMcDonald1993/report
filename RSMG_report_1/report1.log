@@ -1,0 +1,486 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.13)  10 APR 2017 11:53
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**report1.tex
+(./report1.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+\captionmargin=\dimen112
+\captionmargin@=\dimen113
+\captionwidth=\dimen114
+\caption@tempdima=\dimen115
+\caption@indent=\dimen116
+\caption@parindent=\dimen117
+\caption@hangindent=\dimen118
+)
+\c@ContinuedFloat=\count100
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+\c@subfigure=\count101
+\c@subtable=\count102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks20
+\verbatim@line=\toks21
+\verbatim@in@stream=\read1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count103
+))
+\Gin@req@height=\dimen119
+\Gin@req@width=\dimen120
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen121
+\lightrulewidth=\dimen122
+\cmidrulewidth=\dimen123
+\belowrulesep=\dimen124
+\belowbottomsep=\dimen125
+\aboverulesep=\dimen126
+\abovetopsep=\dimen127
+\cmidrulesep=\dimen128
+\cmidrulekern=\dimen129
+\defaultaddspace=\dimen130
+\@cmidla=\count104
+\@cmidlb=\count105
+\@aboverulesep=\dimen131
+\@belowrulesep=\dimen132
+\@thisruleclass=\count106
+\@lastruleclass=\count107
+\@thisrulewidth=\dimen133
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
+) (./report1.aux)
+\openout1 = `report1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen134
+\scratchbox=\box28
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen135
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks23
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./report1.toc)
+\tf@toc=\write3
+\openout3 = `report1.toc'.
+
+ [1
+
+]
+Chapter 1.
+[2
+
+] [3]
+Chapter 2.
+[4
+
+] [5] [6]
+Chapter 3.
+<../overall_algorithm.png, id=31, 329.23pt x 959.585pt>
+File: ../overall_algorithm.png Graphic file (type png)
+
+<use ../overall_algorithm.png>
+Package pdftex.def Info: ../overall_algorithm.png used on input line 207.
+(pdftex.def)             Requested size: 188.70293pt x 550.0pt.
+
+
+LaTeX Warning: Float too large for page by 22.0pt on input line 210.
+
+[7
+
+] [8 <../overall_algorithm.png>] [9] [10] [11] [12]
+Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
+[]\OT1/cmr/m/n/10 Initial neigh-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--372
+[]\OT1/cmr/m/n/10 Stop map
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
+[]\OT1/cmr/bx/n/10 #comms
+ []
+
+[13
+
+] [14] <../first_level.png, id=66, 385.1991pt x 285.4665pt>
+File: ../first_level.png Graphic file (type png)
+
+<use ../first_level.png>
+Package pdftex.def Info: ../first_level.png used on input line 419.
+(pdftex.def)             Requested size: 345.0pt x 255.68039pt.
+ <../second_level.png, id=67, 385.1991pt x 285.4665pt>
+File: ../second_level.png Graphic file (type png)
+
+<use ../second_level.png>
+Package pdftex.def Info: ../second_level.png used on input line 420.
+(pdftex.def)             Requested size: 345.0pt x 255.68039pt.
+
+
+LaTeX Warning: Float too large for page by 8.36078pt on input line 423.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+[]\OT1/cmr/bx/n/10 #comms
+ []
+
+[15] [16 <../first_level.png> <../second_level.png>]
+<../derived_results.png, id=76, 396.7623pt x 267.399pt>
+File: ../derived_results.png Graphic file (type png)
+
+<use ../derived_results.png>
+Package pdftex.def Info: ../derived_results.png used on input line 488.
+(pdftex.def)             Requested size: 345.0pt x 232.51692pt.
+ [17] [18 <../derived_results.png>]
+Chapter 5.
+<../figure2_network.png, id=85, 376.40625pt x 264.99pt>
+File: ../figure2_network.png Graphic file (type png)
+
+<use ../figure2_network.png>
+Package pdftex.def Info: ../figure2_network.png used on input line 504.
+(pdftex.def)             Requested size: 345.0pt x 242.89612pt.
+
+<../figure2_map.png, id=86, 376.40625pt x 264.99pt>
+File: ../figure2_map.png Graphic file (type png)
+ <use ../figure2_map.png>
+Package pdftex.def Info: ../figure2_map.png used on input line 505.
+(pdftex.def)             Requested size: 345.0pt x 242.89612pt.
+
+<../go_terms_YKL019W.png, id=87, 458.9145pt x 330.63525pt>
+File: ../go_terms_YKL019W.png Graphic file (type png)
+
+<use ../go_terms_YKL019W.png>
+Package pdftex.def Info: ../go_terms_YKL019W.png used on input line 516.
+(pdftex.def)             Requested size: 345.0pt x 248.5661pt.
+
+<../go_term_graph.png, id=88, 1377.145pt x 775.89874pt>
+File: ../go_term_graph.png Graphic file (type png)
+
+<use ../go_term_graph.png>
+Package pdftex.def Info: ../go_term_graph.png used on input line 523.
+(pdftex.def)             Requested size: 345.0pt x 194.37674pt.
+ [19
+
+] [20 <../figure2_network.png> <../figure2_map.png>] [21 <../go_terms_YKL019W.p
+ng> <../go_term_graph.png>]
+<../enriched_go_terms.png, id=102, 505.89pt x 505.89pt>
+File: ../enriched_go_terms.png Graphic file (type png)
+
+<use ../enriched_go_terms.png>
+Package pdftex.def Info: ../enriched_go_terms.png used on input line 547.
+(pdftex.def)             Requested size: 345.0pt x 345.00414pt.
+
+<../contingency_table.png, id=103, 152.9715pt x 96.96225pt>
+File: ../contingency_table.png Graphic file (type png)
+
+<use ../contingency_table.png>
+Package pdftex.def Info: ../contingency_table.png used on input line 557.
+(pdftex.def)             Requested size: 345.0pt x 218.68382pt.
+ [22] [23 <../enriched_go_terms.png>]
+Overfull \hbox (23.45825pt too wide) in paragraph at lines 592--592
+[] 
+ []
+
+<../resnik.png, id=112, 505.89pt x 505.89pt>
+File: ../resnik.png Graphic file (type png)
+ <use ../resnik.png>
+Package pdftex.def Info: ../resnik.png used on input line 596.
+(pdftex.def)             Requested size: 345.0pt x 345.00414pt.
+
+<../shortest_path.png, id=113, 505.89pt x 505.89pt>
+File: ../shortest_path.png Graphic file (type png)
+ <use ../shortest_path.png>
+Package pdftex.def Info: ../shortest_path.png used on input line 603.
+(pdftex.def)             Requested size: 345.0pt x 345.00414pt.
+
+[24 <../contingency_table.png>] [25 <../resnik.png>] [26 <../shortest_path.png>
+] <../wang.png, id=127, 505.89pt x 505.89pt>
+File: ../wang.png Graphic file (type png)
+ <use ../wang.png>
+Package pdftex.def Info: ../wang.png used on input line 638.
+(pdftex.def)             Requested size: 345.0pt x 345.00414pt.
+
+<../semantic_results.png, id=128, 505.89pt x 505.89pt>
+File: ../semantic_results.png Graphic file (type png)
+
+<use ../semantic_results.png>
+Package pdftex.def Info: ../semantic_results.png used on input line 645.
+(pdftex.def)             Requested size: 345.0pt x 345.00414pt.
+ [27] [28 <../wang.png>] [29 <../semantic_results.png>]
+Chapter 6.
+
+LaTeX Warning: Reference `bayes' on page 1 undefined on input line 658.
+
+[30
+
+] (./report1.bbl [31]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [32
+
+] [33]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+
+Underfull \hbox (badness 5893) in paragraph at lines 203--206
+[]\OT1/cmr/m/n/10 Uetz screen dataset.  $\OT1/cmtt/m/n/10 http : / / interactom
+e . dfci . harvard . edu / S _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--211
+[]\OT1/cmr/m/n/10 Y2h union dataset.  $\OT1/cmtt/m/n/10 http : / / interactome 
+. dfci . harvard . edu / S _
+ []
+
+[34]) [35] (./report1.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5344 strings out of 493029
+ 89690 string characters out of 6136234
+ 165831 words of memory out of 5000000
+ 8805 multiletter control sequences out of 15000+600000
+ 15095 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,16n,39p,1242b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on report1.pdf (36 pages, 638629 bytes).
+PDF statistics:
+ 212 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+

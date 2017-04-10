@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: presentation4.aux
+The style file: named.bst
+Database file #1: references.bib
+Warning--to sort, need author or key in uetz
+Warning--to sort, need author or key in union
+Warning--empty school in van2001graph
+You've used 9 entries,
+            2439 wiz_defined-function locations,
+            606 strings with 6266 characters,
+and the built_in function-call counts, 3806 in all, are:
+= -- 383
+> -- 192
+< -- 1
++ -- 69
+- -- 68
+* -- 328
+:= -- 612
+add.period$ -- 25
+call.type$ -- 9
+change.case$ -- 67
+chr.to.int$ -- 9
+cite$ -- 14
+duplicate$ -- 130
+empty$ -- 264
+format.name$ -- 76
+if$ -- 768
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 6
+newline$ -- 46
+num.names$ -- 21
+pop$ -- 66
+preamble$ -- 1
+purify$ -- 77
+quote$ -- 0
+skip$ -- 113
+stack$ -- 0
+substring$ -- 204
+swap$ -- 30
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 72
+warning$ -- 3
+while$ -- 27
+width$ -- 13
+write$ -- 110
+(There were 3 warnings)

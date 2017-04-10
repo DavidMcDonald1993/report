@@ -1,0 +1,29 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {chapter}{\numberline {2}Community Detection in Complex Networks}{4}
+\contentsline {section}{\numberline {2.1}Related Work}{5}
+\contentsline {subsection}{\numberline {2.1.1}Cut-Based and Spectral Approaches}{5}
+\contentsline {subsection}{\numberline {2.1.2}Modularity-Based Approaches}{6}
+\contentsline {subsection}{\numberline {2.1.3}Statistical Approaches}{6}
+\contentsline {subsection}{\numberline {2.1.4}Neural Network Approaches}{6}
+\contentsline {section}{\numberline {2.2}Hierarchical Community Detection}{6}
+\contentsline {chapter}{\numberline {3}The Growing Hierarchical Self-Organising Map}{7}
+\contentsline {section}{\numberline {3.1}Embedding of Vertices using MDS}{7}
+\contentsline {section}{\numberline {3.2}The Growing Hierarchical Self-Organizing Map}{9}
+\contentsline {section}{\numberline {3.3}Hyper-Parameters}{9}
+\contentsline {section}{\numberline {3.4}$\textbf {MQE}_0$}{9}
+\contentsline {section}{\numberline {3.5}Training the First Layer}{10}
+\contentsline {section}{\numberline {3.6}Growing the Map}{11}
+\contentsline {section}{\numberline {3.7}Termination of Map Growth}{11}
+\contentsline {section}{\numberline {3.8}Neuron Deletion}{11}
+\contentsline {section}{\numberline {3.9}Adding a New Layer to the Map}{11}
+\contentsline {section}{\numberline {3.10}Termination of GHSOM}{12}
+\contentsline {chapter}{\numberline {4}Results so Far}{13}
+\contentsline {section}{\numberline {4.1}Real World Benchmarks}{13}
+\contentsline {section}{\numberline {4.2}Synthetic Hierarchical Benchmarks}{13}
+\contentsline {section}{\numberline {4.3}Dependence upon Parameter Settings}{15}
+\contentsline {chapter}{\numberline {5}Functional Similarity of Neighbouring Communities}{19}
+\contentsline {section}{\numberline {5.1}Background: The Gene Ontology}{19}
+\contentsline {section}{\numberline {5.2}Experiments on Saccharomyces Cerevisiae dataset}{22}
+\contentsline {subsection}{\numberline {5.2.1}Resnik}{22}
+\contentsline {subsection}{\numberline {5.2.2}Wang}{24}
+\contentsline {chapter}{\numberline {6}Discussion \& Future Plans}{30}

@@ -1,0 +1,246 @@
+\begin{thebibliography}{10}
+
+\bibitem{barabasi2009scale}
+Albert-L{\'a}szl{\'o} Barab{\'a}si.
+\newblock Scale-free networks: a decade and beyond.
+\newblock {\em science}, 325(5939):412--413, 2009.
+
+\bibitem{watts1998collective}
+Duncan~J Watts and Steven~H Strogatz.
+\newblock Collective dynamics of ‘small-world’networks.
+\newblock {\em nature}, 393(6684):440--442, 1998.
+
+\bibitem{krizhevsky2012imagenet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1097--1105, 2012.
+
+\bibitem{hinton2002training}
+Geoffrey~E Hinton.
+\newblock Training products of experts by minimizing contrastive divergence.
+\newblock {\em Neural computation}, 14(8):1771--1800, 2002.
+
+\bibitem{lancichinetti2009detecting}
+Andrea Lancichinetti, Santo Fortunato, and J{\'a}nos Kert{\'e}sz.
+\newblock Detecting the overlapping and hierarchical community structure in
+  complex networks.
+\newblock {\em New Journal of Physics}, 11(3):033015, 2009.
+
+\bibitem{girvan2002community}
+Michelle Girvan and Mark~EJ Newman.
+\newblock Community structure in social and biological networks.
+\newblock {\em Proceedings of the national academy of sciences},
+  99(12):7821--7826, 2002.
+
+\bibitem{barber2007modularity}
+Michael~J Barber.
+\newblock Modularity and community detection in bipartite networks.
+\newblock {\em Physical Review E}, 76(6):066102, 2007.
+
+\bibitem{fortunato2007resolution}
+Santo Fortunato and Marc Barthelemy.
+\newblock Resolution limit in community detection.
+\newblock {\em Proceedings of the National Academy of Sciences}, 104(1):36--41,
+  2007.
+
+\bibitem{danon2006effect}
+Leon Danon, Albert D{\'\i}az-Guilera, and Alex Arenas.
+\newblock The effect of size heterogeneity on community identification in
+  complex networks.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
+  2006(11):P11010, 2006.
+
+\bibitem{yang2013hierarchical}
+Bo~Yang, Jin Di, Jiming Liu, and Dayou Liu.
+\newblock Hierarchical community detection with applications to real-world
+  network analysis.
+\newblock {\em Data \& Knowledge Engineering}, 83:20--38, 2013.
+
+\bibitem{dittenbach2000growing}
+Michael Dittenbach, Dieter Merkl, and Andreas Rauber.
+\newblock The growing hierarchical self-organizing map.
+\newblock In {\em IJCNN (6)}, pages 15--19, 2000.
+
+\bibitem{fortunato2010community}
+Santo Fortunato.
+\newblock Community detection in graphs.
+\newblock {\em Physics reports}, 486(3):75--174, 2010.
+
+\bibitem{kernighan1970efficient}
+Brian~W Kernighan and Shen Lin.
+\newblock An efficient heuristic procedure for partitioning graphs.
+\newblock {\em Bell system technical journal}, 49(2):291--307, 1970.
+
+\bibitem{donath1973lower}
+William~E Donath and Alan~J Hoffman.
+\newblock Lower bounds for the partitioning of graphs.
+\newblock {\em IBM Journal of Research and Development}, 17(5):420--425, 1973.
+
+\bibitem{ng2002spectral}
+Andrew~Y Ng, Michael~I Jordan, Yair Weiss, et~al.
+\newblock On spectral clustering: Analysis and an algorithm.
+\newblock {\em Advances in neural information processing systems}, 2:849--856,
+  2002.
+
+\bibitem{donetti2004detecting}
+L~Donetti and MA~Munoz.
+\newblock Detecting network communities: a new and systematic approach.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment P},
+  10012:2004, 2004.
+
+\bibitem{van2001graph}
+Stijn~Marinus Van~Dongen.
+\newblock {\em Graph clustering by flow simulation}.
+\newblock PhD thesis, 2001.
+
+\bibitem{radicchi2004defining}
+Filippo Radicchi, Claudio Castellano, Federico Cecconi, Vittorio Loreto, and
+  Domenico Parisi.
+\newblock Defining and identifying communities in networks.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 101(9):2658--2663, 2004.
+
+\bibitem{clauset2004finding}
+Aaron Clauset, Mark~EJ Newman, and Cristopher Moore.
+\newblock Finding community structure in very large networks.
+\newblock {\em Physical review E}, 70(6):066111, 2004.
+
+\bibitem{blondel2008fast}
+Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of statistical mechanics: theory and experiment},
+  2008(10):P10008, 2008.
+
+\bibitem{newman2004finding}
+Mark~EJ Newman and Michelle Girvan.
+\newblock Finding and evaluating community structure in networks.
+\newblock {\em Physical review E}, 69(2):026113, 2004.
+
+\bibitem{defferrard2016convolutional}
+Micha{\"e}l Defferrard, Xavier Bresson, and Pierre Vandergheynst.
+\newblock Convolutional neural networks on graphs with fast localized spectral
+  filtering.
+\newblock {\em arXiv preprint arXiv:1606.09375}, 2016.
+
+\bibitem{kipf2016semi}
+Thomas~N Kipf and Max Welling.
+\newblock Semi-supervised classification with graph convolutional networks.
+\newblock {\em arXiv preprint arXiv:1609.02907}, 2016.
+
+\bibitem{pons2011post}
+Pascal Pons and Matthieu Latapy.
+\newblock Post-processing hierarchical community structures: Quality
+  improvements and multi-scale view.
+\newblock {\em Theoretical Computer Science}, 412(8):892--900, 2011.
+
+\bibitem{psorakis2011overlapping}
+Ioannis Psorakis, Stephen Roberts, Mark Ebden, and Ben Sheldon.
+\newblock Overlapping community detection using bayesian non-negative matrix
+  factorization.
+\newblock {\em Physical Review E}, 83(6):066114, 2011.
+
+\bibitem{schaub2016many}
+Michael~T Schaub, Jean-Charles Delvenne, Martin Rosvall, and Renaud Lambiotte.
+\newblock The many facets of community detection in complex networks.
+\newblock {\em arXiv preprint arXiv:1611.07769}, 2016.
+
+\bibitem{yamakawa2006self}
+Takeshi Yamakawa, Keiichi Horio, and Masaharu Hoshino.
+\newblock Self-organizing map with input data represented as graph.
+\newblock In {\em International Conference on Neural Information Processing},
+  pages 907--914. Springer, 2006.
+
+\bibitem{dittenbach2002uncovering}
+Michael Dittenbach, Andreas Rauber, and Dieter Merkl.
+\newblock Uncovering hierarchical structure in data using the growing
+  hierarchical self-organizing map.
+\newblock {\em Neurocomputing}, 48(1):199--216, 2002.
+
+\bibitem{kohonen1990self}
+Teuvo Kohonen.
+\newblock The self-organizing map.
+\newblock {\em Proceedings of the IEEE}, 78(9):1464--1480, 1990.
+
+\bibitem{fritzke1994growing}
+Bernd Fritzke.
+\newblock Growing cell structures—a self-organizing network for unsupervised
+  and supervised learning.
+\newblock {\em Neural networks}, 7(9):1441--1460, 1994.
+
+\bibitem{zachary1977information}
+Wayne~W Zachary.
+\newblock An information flow model for conflict and fission in small groups.
+\newblock {\em Journal of anthropological research}, pages 452--473, 1977.
+
+\bibitem{lusseau2003bottlenose}
+David Lusseau, Karsten Schneider, Oliver~J Boisseau, Patti Haase, Elisabeth
+  Slooten, and Steve~M Dawson.
+\newblock The bottlenose dolphin community of doubtful sound features a large
+  proportion of long-lasting associations.
+\newblock {\em Behavioral Ecology and Sociobiology}, 54(4):396--405, 2003.
+
+\bibitem{snoek2013bayesian}
+Jasper Snoek.
+\newblock {\em Bayesian Optimization and Semiparametric Models with
+  Applications to Assistive Technology}.
+\newblock PhD thesis, Citeseer, 2013.
+
+\bibitem{ashburner2000gene}
+Michael Ashburner, Catherine~A Ball, Judith~A Blake, David Botstein, Heather
+  Butler, J~Michael Cherry, Allan~P Davis, Kara Dolinski, Selina~S Dwight,
+  Janan~T Eppig, et~al.
+\newblock Gene ontology: tool for the unification of biology.
+\newblock {\em Nature genetics}, 25(1):25--29, 2000.
+
+\bibitem{du2009g}
+Zhidian Du, Lin Li, Chin-Fu Chen, S~Yu Philip, and James~Z Wang.
+\newblock G-sesame: web tools for go-term-based gene similarity analysis and
+  knowledge discovery.
+\newblock {\em Nucleic acids research}, page gkp463, 2009.
+
+\bibitem{uetz}
+Uetz screen dataset.
+\newblock
+  \url{http://interactome.dfci.harvard.edu/S_cerevisiae/download/Uetz_screen.txt}.
+
+\bibitem{union}
+Y2h union dataset.
+\newblock
+  \url{http://interactome.dfci.harvard.edu/S_cerevisiae/download/Y2H_union.txt}.
+
+\bibitem{frohlich2007gosim}
+Holger Fr{\"o}hlich, Nora Speer, Annemarie Poustka, and Tim Bei{\ss}barth.
+\newblock Gosim--an r-package for computation of information theoretic go
+  similarities between terms and gene products.
+\newblock {\em BMC bioinformatics}, 8(1):166, 2007.
+
+\bibitem{alexa2010topgo}
+Adrian Alexa and Jorg Rahnenfuhrer.
+\newblock topgo: enrichment analysis for gene ontology.
+\newblock {\em R package version}, 2(0), 2010.
+
+\bibitem{resnik1999semantic}
+Philip Resnik et~al.
+\newblock Semantic similarity in a taxonomy: An information-based measure and
+  its application to problems of ambiguity in natural language.
+\newblock {\em J. Artif. Intell. Res.(JAIR)}, 11:95--130, 1999.
+
+\bibitem{sevilla2005correlation}
+Jose~L Sevilla, Victor Segura, Adam Podhorski, Elizabeth Guruceaga, Jose~M
+  Mato, Luis~A Martinez-Cruz, Fernando~J Corrales, and Angel Rubio.
+\newblock Correlation between gene expression and go semantic similarity.
+\newblock {\em IEEE/ACM Transactions on Computational Biology and
+  Bioinformatics (TCBB)}, 2(4):330--338, 2005.
+
+\bibitem{wang2007new}
+James~Z Wang, Zhidian Du, Rapeeporn Payattakool, S~Yu Philip, and Chin-Fu Chen.
+\newblock A new method to measure the semantic similarity of go terms.
+\newblock {\em Bioinformatics}, 23(10):1274--1281, 2007.
+
+\bibitem{bonabeau2002graph}
+Eric Bonabeau.
+\newblock Graph multidimensional scaling with self-organizing maps.
+\newblock {\em Information Sciences}, 143(1):159--180, 2002.
+
+\end{thebibliography}

@@ -1,0 +1,60 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Ashburner \bgroup \em et al.\egroup
+  }{2000}]{ashburner2000gene}
+Michael Ashburner, Catherine~A Ball, Judith~A Blake, David Botstein, Heather
+  Butler, J~Michael Cherry, Allan~P Davis, Kara Dolinski, Selina~S Dwight,
+  Janan~T Eppig, et~al.
+\newblock Gene ontology: tool for the unification of biology.
+\newblock {\em Nature genetics}, 25(1):25--29, 2000.
+
+\bibitem[\protect\citeauthoryear{Resnik and others}{1999}]{resnik1999semantic}
+Philip Resnik et~al.
+\newblock Semantic similarity in a taxonomy: An information-based measure and
+  its application to problems of ambiguity in natural language.
+\newblock {\em J. Artif. Intell. Res.(JAIR)}, 11:95--130, 1999.
+
+\bibitem[\protect\citeauthoryear{Sevilla \bgroup \em et al.\egroup
+  }{2005}]{sevilla2005correlation}
+Jose~L Sevilla, Victor Segura, Adam Podhorski, Elizabeth Guruceaga, Jose~M
+  Mato, Luis~A Martinez-Cruz, Fernando~J Corrales, and Angel Rubio.
+\newblock Correlation between gene expression and go semantic similarity.
+\newblock {\em IEEE/ACM Transactions on Computational Biology and
+  Bioinformatics (TCBB)}, 2(4):330--338, 2005.
+
+\bibitem[\protect\citeauthoryear{Snoek \bgroup \em et al.\egroup
+  }{2012}]{snoek2012practical}
+Jasper Snoek, Hugo Larochelle, and Ryan~P Adams.
+\newblock Practical bayesian optimization of machine learning algorithms.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2951--2959, 2012.
+
+\bibitem[\protect\citeauthoryear{uet}{}]{uetz}
+Uetz screen dataset.
+\newblock
+  \url{http://interactome.dfci.harvard.edu/S_cerevisiae/download/Uetz_screen.txt}.
+
+\bibitem[\protect\citeauthoryear{uni}{}]{union}
+Y2h union dataset.
+\newblock
+  \url{http://interactome.dfci.harvard.edu/S_cerevisiae/download/Y2H_union.txt}.
+
+\bibitem[\protect\citeauthoryear{Van~Dongen}{2001}]{van2001graph}
+Stijn~Marinus Van~Dongen.
+\newblock {\em Graph clustering by flow simulation}.
+\newblock PhD thesis, 2001.
+
+\bibitem[\protect\citeauthoryear{Wang \bgroup \em et al.\egroup
+  }{2007}]{wang2007new}
+James~Z Wang, Zhidian Du, Rapeeporn Payattakool, S~Yu Philip, and Chin-Fu Chen.
+\newblock A new method to measure the semantic similarity of go terms.
+\newblock {\em Bioinformatics}, 23(10):1274--1281, 2007.
+
+\bibitem[\protect\citeauthoryear{Yang \bgroup \em et al.\egroup
+  }{2013}]{yang2013hierarchical}
+Bo~Yang, Jin Di, Jiming Liu, and Dayou Liu.
+\newblock Hierarchical community detection with applications to real-world
+  network analysis.
+\newblock {\em Data \& Knowledge Engineering}, 83:20--38, 2013.
+
+\end{thebibliography}

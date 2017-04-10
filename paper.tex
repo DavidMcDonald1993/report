@@ -351,7 +351,7 @@ i^* = \argmin_i  ||\textbf{x} - \textbf{w}_i||
 
 The weights of every neuron in the map are then adjusted to move a little closer to $\textbf{x}$, based on how close to $i^*$ they are in the map.
 \begin{align}
-\textbf{w}_i(t+1) = \textbf{w}_i(t) + \eta(t) h(i, i^*, \sigma(t)) (\textbf{v} - \textbf{w}_i)
+\textbf{w}_i(t+1) = \textbf{w}_i(t) + \eta(t) h(i, i^*, \sigma(t)) (\textbf{x} - \textbf{w}_i)
 \end{align}
 The weights are adjusted proportionally to the learning rate $\eta(t)$, and the neighbourhood function $h(i, i^*, \sigma(t))$, given by
 \begin{align}
@@ -591,7 +591,7 @@ $\epsilon_{sg}$ & \multicolumn{4}{c}{\textbf{\#communities}} \\
 \end{figure}
 
 \subsection{Synthetic Hierarchical Benchmarks}
-In ordert to investigate the strength of GHSOM at uncovering the hierarchical community structure of complex networks, synthetic benchmark networks were generated using software provided by Lancichinetti et al. \cite{lancichinetti2009detecting}. 
+In order to investigate the strength of GHSOM at uncovering the hierarchical community structure of complex networks, synthetic benchmark networks were generated using software provided by Lancichinetti et al. \cite{lancichinetti2009detecting}. 
 The generated networks were comprised of 512 nodes divided into 16 communities of 32 nodes. 
 These 16 communities formed 4 super-communities of 128 nodes. 
 This produced networks of nodes belonging to communities at two levels: one at the micro level and one at the macro level.

@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report1.aux
+The style file: unsrt.bst
+Database file #1: ../references.bib
+Warning--empty school in van2001graph
+You've used 43 entries,
+            1791 wiz_defined-function locations,
+            713 strings with 11009 characters,
+and the built_in function-call counts, 10225 in all, are:
+= -- 934
+> -- 434
+< -- 5
++ -- 163
+- -- 120
+* -- 748
+:= -- 1609
+add.period$ -- 128
+call.type$ -- 43
+change.case$ -- 41
+chr.to.int$ -- 0
+cite$ -- 44
+duplicate$ -- 429
+empty$ -- 988
+format.name$ -- 120
+if$ -- 2248
+int.to.chr$ -- 0
+int.to.str$ -- 43
+missing$ -- 39
+newline$ -- 216
+num.names$ -- 41
+pop$ -- 82
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 210
+stack$ -- 0
+substring$ -- 824
+swap$ -- 95
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 105
+width$ -- 45
+write$ -- 464
+(There was 1 warning)

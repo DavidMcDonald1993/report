@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.13)  10 APR 2017 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.13)  10 APR 2017 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**presentation3.tex
-(./presentation3.tex
+**presentation4.tex
+(./presentation4.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -770,8 +770,8 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count160
 \@thisrulewidth=\dimen263
 )
-(./presentation3.aux)
-\openout1 = `presentation3.aux'.
+(./presentation4.aux)
+\openout1 = `presentation4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -866,9 +866,9 @@ LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
 LaTeX Info: Redefining \nameref on input line 16.
 
-(./presentation3.out) (./presentation3.out)
+(./presentation4.out) (./presentation4.out)
 \@outlinefile=\write5
-\openout5 = `presentation3.out'.
+\openout5 = `presentation4.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 16.
@@ -951,286 +951,177 @@ LaTeX Info: Redefining \includegraphics on input line 16.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-(./presentation3.nav)
-Overfull \hbox (105.85205pt too wide) in paragraph at lines 16--16
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
+(./presentation4.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 20.
 
-
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+<first_level.png, id=80, 385.1991pt x 285.4665pt>
+File: first_level.png Graphic file (type png)
+ <use first_level.png>
+Package pdftex.def Info: first_level.png used on input line 40.
+(pdftex.def)             Requested size: 173.33798pt x 128.45872pt.
+
+<second_level.png, id=82, 385.1991pt x 285.4665pt>
+File: second_level.png Graphic file (type png)
+ <use second_level.png>
+Package pdftex.def Info: second_level.png used on input line 40.
+(pdftex.def)             Requested size: 173.33798pt x 128.45872pt.
+
+Overfull \hbox (4.38066pt too wide) in paragraph at lines 40--40
+ [][] 
  []
 
-[2
-
-] <overall_algorithm_presentation.png, id=80, 831.105pt x 414.54875pt>
-File: overall_algorithm_presentation.png Graphic file (type png)
-
-<use overall_algorithm_presentation.png>
-Package pdftex.def Info: overall_algorithm_presentation.png used on input line 
-36.
-(pdftex.def)             Requested size: 342.2953pt x 170.73146pt.
-
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[3
-
- <./overall_algorithm_presentation.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 46.
-
+LaTeX Font Info:    Try loading font information for U+msa on input line 40.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 46.
+LaTeX Font Info:    Try loading font information for U+msb on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 46.
+line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+[3
 
-[4
+ <./first_level.png> <./second_level.png>] [4
 
-] <ghsom_diagram_presentation.png, id=139, 906.38625pt x 427.5975pt>
-File: ghsom_diagram_presentation.png Graphic file (type png)
+] [5
 
-<use ghsom_diagram_presentation.png>
-Package pdftex.def Info: ghsom_diagram_presentation.png used on input line 54.
-(pdftex.def)             Requested size: 342.2953pt x 161.47742pt.
+]
+<figure2_network.png, id=172, 376.40625pt x 264.99pt>
+File: figure2_network.png Graphic file (type png)
 
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+<use figure2_network.png>
+Package pdftex.def Info: figure2_network.png used on input line 103.
+(pdftex.def)             Requested size: 150.55983pt x 105.99411pt.
+ <figure2_map.png, id=173, 376.40625pt x 264.99pt>
+File: figure2_map.png Graphic file (type png)
 
-[5
+<use figure2_map.png>
+Package pdftex.def Info: figure2_map.png used on input line 103.
+(pdftex.def)             Requested size: 150.55983pt x 105.99411pt.
+ [6
 
- <./ghsom_diagram_presentation.png>]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+ <./figure2_network.png> <./figure2_map.png>] [7
 
-[6
+]
+<go_terms_YKL019W.png, id=230, 458.9145pt x 330.63525pt>
+File: go_terms_YKL019W.png Graphic file (type png)
 
-] <first_level.png, id=194, 385.1991pt x 285.4665pt>
-File: first_level.png Graphic file (type png)
- <use first_level.png>
-Package pdftex.def Info: first_level.png used on input line 87.
-(pdftex.def)             Requested size: 173.33798pt x 128.45872pt.
+<use go_terms_YKL019W.png>
+Package pdftex.def Info: go_terms_YKL019W.png used on input line 126.
+(pdftex.def)             Requested size: 183.56255pt x 132.25175pt.
+ [8
 
-<second_level.png, id=195, 385.1991pt x 285.4665pt>
-File: second_level.png Graphic file (type png)
- <use second_level.png>
-Package pdftex.def Info: second_level.png used on input line 87.
-(pdftex.def)             Requested size: 173.33798pt x 128.45872pt.
+ <./go_terms_YKL019W.png>]
+<GO:0007323.png, id=260, 509.905pt x 500.87125pt>
+File: GO:0007323.png Graphic file (type png)
+ <use GO:0007323.png>
+Package pdftex.def Info: GO:0007323.png used on input line 134.
+(pdftex.def)             Requested size: 203.95837pt x 200.34494pt.
 
-Overfull \hbox (4.38066pt too wide) in paragraph at lines 87--87
- [][] 
- []
-
-
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[7
-
- <./first_level.png> <./second_level.png>]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[8
-
-
-] <3dprojection.png, id=255, 642.4pt x 481.8pt>
-File: 3dprojection.png Graphic file (type png)
- <use 3dprojection.png>
-Package pdftex.def Info: 3dprojection.png used on input line 110.
-(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
-
-<3dkarate.png, id=256, 642.4pt x 481.8pt>
-File: 3dkarate.png Graphic file (type png)
- <use 3dkarate.png>
-Package pdftex.def Info: 3dkarate.png used on input line 110.
-(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
-
-Overfull \hbox (0.80397pt too wide) in paragraph at lines 110--110
- [][] 
- []
-
-
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
+Overfull \vbox (1.93155pt too high) detected at line 134
  []
 
 [9
 
-]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[10
-
-
- <./3dprojection.png> <./3dkarate.png>]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[11
-
+ <./GO:0007323.png>] [10
 
 ]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+<contingency_table.png, id=315, 152.9715pt x 96.96225pt>
+File: contingency_table.png Graphic file (type png)
 
-[12
+<use contingency_table.png>
+Package pdftex.def Info: contingency_table.png used on input line 167.
+(pdftex.def)             Requested size: 107.0793pt x 67.87311pt.
+ [11
+
+ <./contingency_table.png>] [12
 
 ]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
+<wang_01.png, id=372, 439.04025pt x 209.583pt>
+File: wang_01.png Graphic file (type png)
+ <use wang_01.png>
+Package pdftex.def Info: wang_01.png used on input line 201.
+(pdftex.def)             Requested size: 175.61299pt x 83.8317pt.
+
+<shortest_path_01.png, id=373, 442.0515pt x 217.41225pt>
+File: shortest_path_01.png Graphic file (type png)
+
+<use shortest_path_01.png>
+Package pdftex.def Info: shortest_path_01.png used on input line 201.
+(pdftex.def)             Requested size: 176.81746pt x 86.96335pt.
+
+Overfull \hbox (10.13515pt too wide) in paragraph at lines 201--201
+ [][] 
  []
 
 [13
 
-]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
+ <./wang_01.png> <./shortest_path_01.png>]
+<justification.png, id=403, 505.89pt x 505.89pt>
+File: justification.png Graphic file (type png)
+ <use justification.png>
+Package pdftex.def Info: justification.png used on input line 209.
+(pdftex.def)             Requested size: 177.06415pt x 177.06415pt.
+
+Overfull \vbox (9.06017pt too high) detected at line 209
  []
 
 [14
 
+ <./justification.png (PNG copy)>] [15
 
-] <derived_results.png, id=420, 396.7623pt x 267.399pt>
-File: derived_results.png Graphic file (type png)
+] (./presentation4.bbl) [16
 
-<use derived_results.png>
-Package pdftex.def Info: derived_results.png used on input line 222.
-(pdftex.def)             Requested size: 238.0592pt x 160.44063pt.
-
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[15
-
-]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[16
-
-
- <./derived_results.png>]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[17
-
-
-] <derived_results_realistic.png, id=502, 395.4775pt x 266.9975pt>
-File: derived_results_realistic.png Graphic file (type png)
-
-<use derived_results_realistic.png>
-Package pdftex.def Info: derived_results_realistic.png used on input line 229.
-(pdftex.def)             Requested size: 257.05733pt x 173.5463pt.
-
-Overfull \vbox (17.54231pt too high) detected at line 229
- []
-
-
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[18
-
- <./derived_results_realistic.png>]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[19
-
-]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[20
-
-] (./presentation3.bbl)
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[21
-
-]
-Overfull \hbox (105.85205pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[22
+] [17
 
 
 ]
 \tf@nav=\write6
-\openout6 = `presentation3.nav'.
+\openout6 = `presentation4.nav'.
 
 \tf@toc=\write7
-\openout7 = `presentation3.toc'.
+\openout7 = `presentation4.toc'.
 
 \tf@snm=\write8
-\openout8 = `presentation3.snm'.
+\openout8 = `presentation4.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
- (./presentation3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
-Package rerunfilecheck Info: File `presentation3.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+
+(./presentation4.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
+Package rerunfilecheck Info: File `presentation4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 262.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 18404 strings out of 493029
- 350883 string characters out of 6136234
- 423518 words of memory out of 5000000
- 21466 multiletter control sequences out of 15000+600000
- 14890 words of font info for 54 fonts, out of 8000000 for 9000
+ 18408 strings out of 493029
+ 350874 string characters out of 6136234
+ 422888 words of memory out of 5000000
+ 21474 multiletter control sequences out of 15000+600000
+ 15058 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,17n,57p,448b,617s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,17n,57p,415b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
@@ -1238,11 +1129,11 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on presentation3.pdf (22 pages, 405971 bytes).
+ype1/public/amsfonts/cm/cmtt10.pfb>
+Output written on presentation4.pdf (17 pages, 393739 bytes).
 PDF statistics:
- 677 PDF objects out of 1000 (max. 8388607)
- 610 compressed objects within 7 object streams
- 49 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 489 compressed objects within 5 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
