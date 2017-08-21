@@ -75,15 +75,11 @@
 		\begin{align*}
 		p(y | x)
 		\end{align*}
-		
 		for example, given (the, quick) as a training sample, we aim to maximise
-		
 		\begin{align*}
 		p(\text{quick} | \text{the})
 		\end{align*}
-		
 		and minimise
-		
 		\begin{align*}
 		p(\text{*anything else*} | \text{the})
 		\end{align*}
@@ -224,7 +220,7 @@
 		
 		\pagebreak
 		
-		We can use random walks to generate the `neighbourhood' of a node and use that as its `context'.
+		We can use random walks to generate the `neighbourhood' of a node and use that as its `context' (\cite{grover2016node2vec}).
 		
 	\end{frame}
 	
@@ -299,6 +295,11 @@
 	
 	\begin{frame}{A recommended blog}
 		\url{http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/}
+	\end{frame}
+	
+	\begin{frame}[allowframebreaks]{References}
+		\bibliography{references}
+		\bibliographystyle{named}
 	\end{frame}
 
 \end{document}

@@ -1,0 +1,10 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Grover and
+  Leskovec}{2016}]{grover2016node2vec}
+Aditya Grover and Jure Leskovec.
+\newblock node2vec: Scalable feature learning for networks.
+\newblock In {\em Proceedings of the 22nd ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 855--864. ACM, 2016.
+
+\end{thebibliography}
